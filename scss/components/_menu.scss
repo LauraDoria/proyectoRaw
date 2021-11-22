@@ -1,0 +1,202 @@
+.menu {
+    background-color: #141D98;
+    list-style: none;
+    .menuContainer {
+        position: sticky;
+        top: 0;
+        display: grid;
+        height: auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        transform: rotate(270deg);
+        justify-items: center;
+
+        #menuConocenos {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-size: 10.5vh;
+        }
+        
+        #menuShop {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 11vh;
+        }
+        
+        #menuBlog {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 11vh;
+        }
+        
+        #menuContacto {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            font-size: 12.5vh;
+        }
+
+        a {
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #EDCCFF;
+            text-decoration: none;
+
+            &:hover {
+                color: #BF9C80;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                color: #EDCCFF;
+                transition: all 2s;
+            }
+        }
+    }
+    .menuContainerMobile {
+        display: none;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        position: sticky;
+
+        .menuContainer {
+            display: none;
+        }
+
+        .menuContainerMobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            #menuConocenos {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                font-size: 6vh;
+            }
+            
+            #menuShop {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                font-size: 6vh;
+            }
+            
+            #menuBlog {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                font-size: 6vh;
+            }
+            
+            #menuContacto {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                font-size: 6vh;
+            }
+    
+            a {
+                font-family: piepie, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #EDCCFF;
+                text-decoration: none;
+    
+                &:hover {
+                    color: #BF9C80;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    color: #EDCCFF;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px) {
+        position: sticky;
+
+        .menuContainer {
+            display: none;
+        }
+
+        .menuContainerMobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            #menuConocenos {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                font-size: 3vh;
+            }
+            
+            #menuShop {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                font-size: 3vh;
+            }
+            
+            #menuBlog {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                font-size: 3vh;
+            }
+            
+            #menuContacto {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                font-size: 3vh;
+            }
+    
+            a {
+                font-family: piepie, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #EDCCFF;
+                text-decoration: none;
+    
+                &:hover {
+                    color: #BF9C80;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    color: #EDCCFF;
+                    transition: all 2s;
+                }
+            }
+        } 
+    }
+}
