@@ -188,6 +188,299 @@
 }
 
 /*Fuentes*/
+.shopContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  /* Tablet */
+  /* Tablet */
+  /* Mobile */
+  /* Mobile */
+}
+.shopContainer .shopPortada {
+  height: 50vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.shopContainer .shopPromociones {
+  height: 50vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.shopContainer .shopMenu {
+  overflow: hidden;
+  width: 5vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.shopContainer .shopMenu:hover {
+  width: 25vw;
+  transition: all 2s;
+}
+.shopContainer .shopMenu:not(:hover) {
+  width: 5vw;
+  transition: all 2s;
+}
+.shopContainer .shopGaleria {
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.shopContainer .shopGaleria .categoriaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.shopContainer .shopMayoristas {
+  height: 100vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.shopContainer .shopContacto {
+  height: 100vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .shopContainer .shopContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .shopContainer .shopPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopPromociones {
+    height: 70vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopMenu .shopMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopMenu .shopMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopGaleria {
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .shopContainer .shopGaleria .categoriaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  .shopContainer .shopMayoristas {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+}
+@media screen and (max-width: 480px) {
+  .shopContainer .shopContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .shopContainer .shopPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .shopContainer .shopPromociones {
+    height: 70vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopMenu .shopMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopMenu .shopMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopGaleria {
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .shopContainer .shopGaleria .categoriaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .shopContainer .shopMayoristas {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .shopContainer .shopContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+}
+
 /*sección portada en todas las páginas*/
 .indexPortada {
   height: 100vh;
