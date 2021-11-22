@@ -1,0 +1,14 @@
+/*sección Conocenos en index.html*/
+.indexConocenos {
+    @include sectionSizes($alturaUno, $anchoUno);
+    background-color: $colorCinco;
+    @extend %dosSubseccionesColumn;
+    p {
+        color: nth($colores, 1);;
+        min-width: $parrafoTres;
+        max-width: $parrafoTres;
+        text-align: $parrafoJustify;
+        @extend %fuenteParrafos;
+    }
+}
+/*sección Conocenos en index.html*/

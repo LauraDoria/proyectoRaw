@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import "./base/variables";
+@import "./base/lists";
+@import "./base/extends";
+@import "./base/mixins";
+@import "./components/indexDiagramacion";
+@import "./components/shopDiagramacion";
+@import "./components/blogDiagramacion";
+@import "./components/productoDiagramacion";
+@import "./components/articuloDiagramacion";
+@import "./components/portada";
+@import "./components/menu";
+@import "./components/indexConocenos";
+@import "./components/indexShop";
+@import "./components/indexBlog";
+@import "./components/contacto";
+@import "./components/reproductorMusica";
+@import "./components/shopPromociones";
+@import "./components/shopGaleria";
+@import "./components/shopMayoristas";
+@import "./components/blogBlog";
+@import "./components/productoSimilares";
+@import "./components/productoProducto";
+@import "./components/articuloArticulo";

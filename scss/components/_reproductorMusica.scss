@@ -1,0 +1,18 @@
+/*reproductor de música en todas las páginas*/
+.musica {
+    input {
+        height: 20vh;
+        width: auto;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        &:active {
+            opacity: 0;
+            z-index: 2;
+        }
+        &:not(:active) {
+            z-index: 3;
+        }
+    }
+}
+/*reproductor de música en todas las páginas*/

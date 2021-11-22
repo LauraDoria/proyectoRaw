@@ -1,0 +1,409 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*Paleta de colores*/
+/*Paleta de colores*/
+/*Tamaño de fuente para desktop*/
+/*Para portadas*/
+/*Para h2*/
+/*Para h3 y menu*/
+/*Para h4*/
+/*Para texto de botones*/
+/*Para textos*/
+/*Tamaño de fuente para desktop*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Para portadas*/
+/*Para h2*/
+/*Para h3 y menu*/
+/*Para h4*/
+/*Para texto de botones*/
+/*Para textos*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Anchos máximos y mínimos para párrafos*/
+/*Anchos máximos y mínimos para párrafos*/
+/*Estilo de párrafo*/
+/*Estilo de párrafo*/
+/*Tamaño de secciones*/
+/*Alturas*/
+/*Alturas*/
+/*Anchos*/
+/*Anchos*/
+/*Tamaño de secciones*/
+/*Paddings*/
+/*Paddings*/
+/*Border radius*/
+/*Border radius*/
+/*Paleta de colores*/
+/*Paleta de colores*/
+/*Tamaño de fuente para desktop*/
+/*Para textos*/
+/*Tamaño de fuente para desktop*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Para textos*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Tamaño de secciones*/
+/*Alturas*/
+/*Alturas*/
+/*Anchos*/
+/*Anchos*/
+/*Tamaño de secciones*/
+/*Paleta de colores*/
+/*Paleta de colores*/
+/*Tamaño de fuente para desktop*/
+/*Para portadas*/
+/*Para h2*/
+/*Para h3 y menu*/
+/*Para h4*/
+/*Para texto de botones*/
+/*Para textos*/
+/*Tamaño de fuente para desktop*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Para portadas*/
+/*Para h2*/
+/*Para h3 y menu*/
+/*Para h4*/
+/*Para texto de botones*/
+/*Para textos*/
+/*Tamaño de fuente para tablet y mobile*/
+/*Anchos máximos y mínimos para párrafos*/
+/*Anchos máximos y mínimos para párrafos*/
+/*Estilo de párrafo*/
+/*Estilo de párrafo*/
+/*Tamaño de secciones*/
+/*Alturas*/
+/*Alturas*/
+/*Anchos*/
+/*Anchos*/
+/*Tamaño de secciones*/
+/*Paddings*/
+/*Paddings*/
+/*Border radius*/
+/*Border radius*/
+/*Botones*/
+.indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink {
+  background-color: #141D98;
+  color: #EDCCFF;
+  font-size: 4vh;
+  padding: 2vh;
+  margin: 5vh;
+  border-radius: 4vh;
+  text-decoration: none;
+}
+.indexShop .indexProductos .botonLink:hover, .indexShop .indexMayoristas .botonLink:hover {
+  background-color: #FCB580;
+  color: #141D98;
+  transition: all 2s;
+}
+.indexShop .indexProductos .botonLink:not(:hover), .indexShop .indexMayoristas .botonLink:not(:hover) {
+  background-color: #141D98;
+  color: #EDCCFF;
+  transition: all 2s;
+}
+
+.indexBlog .indexBlogBody .botonLink {
+  background-color: #141D98;
+  color: #EDCCFF;
+  font-size: 4vh;
+  padding: 2vh;
+  margin: 5vh;
+  border-radius: 4vh;
+  text-decoration: none;
+}
+.indexBlog .indexBlogBody .botonLink:hover {
+  background-color: #12B5E3;
+  color: #141D98;
+  transition: all 2s;
+}
+.indexBlog .indexBlogBody .botonLink:not(:hover) {
+  background-color: #141D98;
+  color: #EDCCFF;
+  transition: all 2s;
+}
+
+/*Botones*/
+/*Flexbox*/
+.indexBlog, .indexShop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.indexPortada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexBlog .indexBlogBody, .indexShop .indexMayoristas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexBlog .indexSlider, .indexShop .indexProductos, .indexConocenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Flexbox*/
+/*Hovers*/
+.indexBlog .indexSlider:hover, .indexBlog .indexBlogBody:hover, .indexShop .indexProductos:hover, .indexShop .indexMayoristas:hover {
+  width: 75%;
+  transition: all 2s;
+}
+.indexBlog .indexSlider:not(:hover), .indexBlog .indexBlogBody:not(:hover), .indexShop .indexProductos:not(:hover), .indexShop .indexMayoristas:not(:hover) {
+  width: 35%;
+  transition: all 2s;
+}
+
+/*Hovers*/
+/*Textos*/
+.indexBlog .indexBlogBody p, .indexShop .indexMayoristas p {
+  font-size: 3vh;
+  min-width: 30vw;
+  max-width: 30vw;
+  text-align: justify;
+}
+
+/*Textos*/
+/*Fuentes*/
+.indexContacto nav, .indexPortada h1, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .indexBlog .indexBlogBody .botonLink {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.indexBlog .indexBlogBody p, .indexShop .indexMayoristas p, .indexConocenos p {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Fuentes*/
+/*sección portada en todas las páginas*/
+.indexPortada {
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-color: #EDCCFF;
+}
+.indexPortada h1 {
+  color: #141D98;
+  font-size: 20vh;
+}
+.indexPortada h1 a {
+  text-decoration: none;
+}
+.indexPortada h1 a:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+.indexPortada h1 a:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .indexPortada {
+    height: 50vh;
+    width: 100%;
+    font-size: 15vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .indexPortada {
+    height: 30vh;
+    width: 100%;
+    font-size: 10vh;
+  }
+}
+
+/*sección portada en todas las páginas*/
+/*sección Conocenos en index.html*/
+.indexConocenos {
+  height: 100vh;
+  width: 100%;
+  background-color: #FCB580;
+}
+.indexConocenos p {
+  color: #141D98;
+  min-width: 70vw;
+  max-width: 70vw;
+  text-align: justify;
+}
+
+/*sección Conocenos en index.html*/
+.indexShop {
+  color: #141D98;
+}
+.indexShop .indexMayoristas {
+  height: 100vh;
+  width: 50%;
+  flex-grow: 1;
+  background-color: #EDCCFF;
+}
+.indexShop .indexProductos {
+  height: 100vh;
+  width: 50%;
+  flex-grow: 1;
+  background-color: #12B5E3;
+}
+.indexBlog {
+  color: #141D98;
+}
+.indexBlog .indexBlogBody {
+  height: 100vh;
+  width: 50%;
+  flex-grow: 1;
+  background-color: #BF9C80;
+}
+.indexBlog .indexSlider {
+  height: 100vh;
+  width: 50%;
+  flex-grow: 1;
+  background-color: #FCB580;
+}
+.indexBlog .indexSlider img {
+  height: 100vh;
+}
+
+/*sección contacto en todas las páginas*/
+.indexContacto {
+  height: 100vh;
+  width: 100%;
+  background-color: #EDCCFF;
+  background-image: url("/src/images/footer-background.svg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.indexContacto nav {
+  margin-right: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: baseline;
+}
+.indexContacto nav .backToTop {
+  font-size: 12vh;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-decoration: none;
+  color: #141D98;
+}
+.indexContacto nav .backToTop:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+.indexContacto nav .backToTop:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+.indexContacto nav .whatsappLogo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: #141D98;
+}
+.indexContacto nav .whatsappLogo img {
+  height: 10vh;
+}
+.indexContacto nav .whatsapp {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-decoration: none;
+  color: #141D98;
+  font-size: 4vh;
+}
+.indexContacto nav .whatsapp:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+.indexContacto nav .whatsapp:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+.indexContacto nav .instagramLogo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: #141D98;
+}
+.indexContacto nav .instagramLogo img {
+  height: 10vh;
+}
+.indexContacto nav .instagram {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-decoration: none;
+  color: #141D98;
+  font-size: 4vh;
+}
+.indexContacto nav .instagram:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+.indexContacto nav .instagram:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+.indexContacto nav div a {
+  color: #141D98;
+  text-decoration: none;
+}
+.indexContacto nav div a img {
+  height: 12vh;
+}
+.indexContacto nav div a h2 {
+  font-size: 4vh;
+}
+.indexContacto nav div a:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+.indexContacto nav div a:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+
+/*sección contacto en todas las páginas*/
+/*reproductor de música en todas las páginas*/
+.musica input {
+  height: 20vh;
+  width: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.musica input:active {
+  opacity: 0;
+  z-index: 2;
+}
+.musica input:not(:active) {
+  z-index: 3;
+}
+
+/*reproductor de música en todas las páginas*/
+
+/*# sourceMappingURL=style.css.map */

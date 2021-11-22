@@ -1,0 +1,114 @@
+/*sección contacto en todas las páginas*/
+.indexContacto {
+    @include sectionSizes($alturaUno, $anchoUno);
+    background-color: $colorDos;
+    background-image: url("/src/images/footer-background.svg");
+    background-repeat: no-repeat;
+    background-size: $alturaUno;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    nav {
+        margin-right: 2%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        align-items: baseline;
+        @extend %fuenteTitulos;
+        .backToTop {
+            font-size: $sizeCuatro;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            text-decoration: none;
+            color: nth($colores, 1);
+            &:hover {
+                color: $colorTres;
+                transition: all 2s;
+            }
+            &:not(:hover) {
+                color: $colorUno;
+                transition: all 2s;
+            }
+        }
+        .whatsappLogo {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            color: nth($colores, 1);
+            img {
+                height: 10vh;
+            }
+        }
+        .whatsapp {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            text-decoration: none;
+            color: nth($colores, 1);
+            font-size: $sizeCinco;
+            &:hover {
+                color: $colorTres;
+                transition: all 2s;
+            }
+            &:not(:hover) {
+                color: $colorUno;
+                transition: all 2s;
+            }
+        }
+        .instagramLogo {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            color: nth($colores, 1);
+            img {
+                height: 10vh;
+            }
+        }
+        .instagram {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            text-decoration: none;
+            color: nth($colores, 1);
+            font-size: $sizeCinco;
+            &:hover {
+                color: $colorTres;
+                transition: all 2s;
+            }
+            &:not(:hover) {
+                color: $colorUno;
+                transition: all 2s;
+            }
+        }
+        div {
+            a {
+                color: $colorUno;
+                text-decoration: none;
+                img {
+                    height: $sizeTres;
+                }
+                h2 {
+                    font-size: $sizeCinco;
+                }
+                &:hover {
+                    color: $colorTres;
+                    transition: all 2s;
+                }
+                &:not(:hover) {
+                    color: $colorUno;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+}
+/*sección contacto en todas las páginas*/

@@ -1,0 +1,33 @@
+/*sección portada en todas las páginas*/
+.indexPortada {
+    @include sectionSizes($alturaUno, $anchoUno);
+    height: $alturaCuatro +50vh;
+    width: $anchoCuatro *2;
+    background-color: nth($colores, 2);
+    @extend %seccionPantallaCompleta;
+    h1 {
+        @extend %fuenteTitulos;
+        color: nth($colores, 1);
+        font-size: $sizeUno;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $colorTres;
+                transition: all 2s;
+            }
+            &:not(:hover) {
+                color: $colorUno;
+                transition: all 2s;
+            }
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        @include sectionSizes($alturaCuatro, $anchoUno);
+        font-size: $sizeUnoMobile;
+    }
+    @media screen and (max-width: 480px) {
+        @include sectionSizes($alturaCinco, $anchoUno);
+        font-size: $sizeTresMobile;
+    }
+}
+/*sección portada en todas las páginas*/

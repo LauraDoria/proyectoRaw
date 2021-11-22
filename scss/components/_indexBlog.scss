@@ -1,0 +1,30 @@
+.indexBlog {
+    @extend %dosSubseccionesRow;
+    color: nth($colores, 1);
+    .indexBlogBody {
+        height: nth($heights, 1);
+        width: nth($widths, 4);
+        @extend %elementosColumn;
+        flex-grow: 1;
+        background-color: nth($colores, 3);
+        @extend %hoverSeccionesDesktop;
+        .botonLink {
+            @extend %botonesDos;
+        }
+        p {
+            @extend %parrafoSubseccionDesktop;
+            @extend %fuenteParrafos;
+        }
+    }
+    .indexSlider {
+        height: nth($heights, 1);
+        width: nth($widths, 4);
+        @extend %dosSubseccionesColumn;
+        flex-grow: 1;
+        background-color: nth($colores, 5);
+        @extend %hoverSeccionesDesktop;
+        img {
+            height: nth($heights, 1);
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import "variables";
+
+/*Botones*/
+%botonesUno {
+    background-color: $colorUno;
+    color: $colorDos;
+    font-size: $sizeCinco;
+    padding: $paddingBotones;
+    margin: 5vh;
+    border-radius: $radius;
+    text-decoration: none;
+    @extend %fuenteTitulos;
+    &:hover {
+        background-color: $colorCinco;
+        color: $colorUno;
+        transition: all 2s;
+    }
+    &:not(:hover) {
+        background-color: $colorUno;
+        color: $colorDos;
+        transition: all 2s;
+    }
+}
+
+%botonesDos {
+    background-color: $colorUno;
+    color: $colorDos;
+    font-size: $sizeCinco;
+    padding: $paddingBotones;
+    margin: 5vh;
+    border-radius: $radius;
+    text-decoration: none;
+    @extend %fuenteTitulos;
+    &:hover {
+        background-color: $colorCuatro;
+        color: $colorUno;
+        transition: all 2s;
+    }
+    &:not(:hover) {
+        background-color: $colorUno;
+        color: $colorDos;
+        transition: all 2s;
+    }
+}
+/*Botones*/
+
+/*Flexbox*/
+%dosSubseccionesRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%seccionPantallaCompleta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+%elementosColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%dosSubseccionesColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Flexbox*/
+
+/*Hovers*/
+%hoverSeccionesDesktop {
+    &:hover {
+        width: $anchoTres;
+        transition: all 2s;
+    }
+    &:not(:hover) {
+        width: $anchoCinco;
+        transition: all 2s;
+    }
+}
+/*Hovers*/
+
+/*Textos*/
+%parrafoSubseccionDesktop {
+    font-size: $sizeSeis;
+    min-width: $parrafoSeis;
+    max-width: $parrafoSeis;
+    text-align: justify;
+}
+/*Textos*/
+
+/*Fuentes*/
+%fuenteTitulos {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+%fuenteParrafos {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Fuentes*/

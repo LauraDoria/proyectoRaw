@@ -1,0 +1,30 @@
+.indexShop {
+    @extend %dosSubseccionesRow;
+    color: nth($colores, 1);
+    .indexMayoristas {
+        height: nth($heights, 1);
+        width: nth($widths, 4);
+        @extend %elementosColumn;
+        flex-grow: 1;
+        background-color: nth($colores, 2);
+        @extend %hoverSeccionesDesktop;
+        .botonLink {
+            @extend %botonesUno;
+        }
+        p {
+            @extend %parrafoSubseccionDesktop;
+            @extend %fuenteParrafos;
+        }
+    }
+    .indexProductos {
+        height: nth($heights, 1);
+        width: nth($widths, 4);
+        @extend %dosSubseccionesColumn;
+        flex-grow: 1;
+        background-color: nth($colores, 4);
+        @extend %hoverSeccionesDesktop;
+        .botonLink {
+            @extend %botonesUno;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+Algunos de los ajustes para optimizacion del SEO los inclui desde las primeras clases:
+-Uso de etiquetas semanticas para estructurar el body de la pagina.
+-Uso de IDs unicos en cada pagina.
+-Jerarquizacion de titulos de secciones y subsecciones usando los h1, h2, h3, etc.
+-Uso de un unico h1 por pagina, reservado para el texto mas relevante.
+-Completar el alt de las imagenes con descripciones relevantes.
+-Uso en la medida de lo posible de imagenes en formato svg.
+-Uso de paleta de colores con niveles de contraste adecuados para mejora en accesibilidad.
+-Diseño responsive para dispositivos mobile y tablet.
+-Uso de meta etiqueta "robots" para index y follow.
+-Uso de meta etiqueta  "description" con una breve descripcion del sitio.
+-Uso de meta etiqueta "keywords" con una lista de palabras claves relevantes para la marca y el rubro.
+-Uso de meta etiqueta "title" con el nombre de la marca para titulo de la pagina.
+-Uso de enlaces relativos o internos del sitio, los unicos enlaces externos son los que derivan a los medios de contacto y redes sociales de la marca (instagram, whatsapp).
+
+Etiquetas del Head
+-Etiqueta "title": amplie el titulo para alcanzar el minimo de caracteres agregando una pequeña descripcion. El titulo de cada pagina
+sera unico de acuerdo al contenido.
+-Etiqueta "description": amplie la descripcion para alcanzar el optimo de caracteres, las 3 paginas mas importantes (index, shop y blog) tendran una descripcion unica para cada una, las paginas de producto o articulos del blog derivadas de ellas repetiran la descripcion correspondiente.
+-Etiqueta "keyword": agregue palabras clave relevantes al rubro y especificas de los productos que ofrece la marca para alcanzar el numero optimo.
+-Agregue etiquetas "open graph" para establecer el contenido que se muestra en redes sociales.
