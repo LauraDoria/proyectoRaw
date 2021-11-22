@@ -1,5 +1,7 @@
 .indexBlog {
     @extend %dosSubseccionesRow;
+    height: 100vw;
+    width: 95vw;
     color: nth($colores, 1);
     .indexBlogBody {
         height: nth($heights, 1);

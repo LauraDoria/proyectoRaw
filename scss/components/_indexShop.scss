@@ -1,5 +1,7 @@
 .indexShop {
     @extend %dosSubseccionesRow;
+    height: 100vw;
+    width: 95vw;
     color: nth($colores, 1);
     .indexMayoristas {
         height: nth($heights, 1);

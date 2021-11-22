@@ -1,6 +1,6 @@
 /*sección Conocenos en index.html*/
 .indexConocenos {
-    @include sectionSizes($alturaUno, $anchoUno);
+    @include sectionSizes($alturaUno, $anchoDos);
     background-color: $colorCinco;
     @extend %dosSubseccionesColumn;
     p {

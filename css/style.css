@@ -230,6 +230,16 @@
 .menu {
   background-color: #141D98;
   list-style: none;
+  width: 5vw;
+  overflow: hidden;
+}
+.menu:hover {
+  width: 25vw;
+  transition: all 2s;
+}
+.menu:not(:hover) {
+  width: 5vw;
+  transition: all 2s;
 }
 .menu .menuContainer {
   position: sticky;
@@ -411,7 +421,7 @@
 /*sección Conocenos en index.html*/
 .indexConocenos {
   height: 100vh;
-  width: 100%;
+  width: 95%;
   background-color: #FCB580;
 }
 .indexConocenos p {
@@ -423,6 +433,8 @@
 
 /*sección Conocenos en index.html*/
 .indexShop {
+  height: 100vw;
+  width: 95vw;
   color: #141D98;
 }
 .indexShop .indexMayoristas {
@@ -438,6 +450,8 @@
   background-color: #12B5E3;
 }
 .indexBlog {
+  height: 100vw;
+  width: 95vw;
   color: #141D98;
 }
 .indexBlog .indexBlogBody {
