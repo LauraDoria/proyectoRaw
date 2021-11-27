@@ -1,7 +1,21 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*fuentes*/
+/*segunda fuente para titulos segun marca*/
+@font-face {
+    font-family: "julietamessie";
+    src: url("/src/fonts/julietamessie.otf") format("otf");
+} 
+/*segunda fuente para titulos segun marca*/
+/* fuentes */
 
 @import "./base/variables";
 @import "./base/lists";

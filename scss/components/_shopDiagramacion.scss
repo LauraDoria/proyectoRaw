@@ -33,6 +33,36 @@
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
+
+        .shopPromoUno {
+            height: 50vh;
+            width: 50%;
+
+            &:hover {
+                width: 70%;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                width: 30%;
+                transition: all 2s;
+            }
+        }
+
+        .shopPromoDos {
+            height: 50vh;
+            width: 50%;
+
+            &:hover {
+                width: 70%;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                width: 30%;
+                transition: all 2s;
+            }
+        }
     }
 
     .shopMenu {
@@ -112,7 +142,7 @@
             grid-template-columns: auto;
             grid-template-rows: auto auto auto auto auto auto;
         }
-    
+        
         .shopPortada {
             height: 30vh;
             width: 100vw;
@@ -126,7 +156,7 @@
             justify-content: space-around;
             align-items: center;
         }
-    
+        
         .shopPromociones {
             height: 70vh;
             width: 100vw;
@@ -139,8 +169,38 @@
             flex-wrap: nowrap;
             justify-content: space-around;
             align-items: center;
-        }
+
+            .shopPromoUno {
+                height: 70vh;
+                width: 50%;
     
+                &:hover {
+                    width: 70%;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    width: 30%;
+                    transition: all 2s;
+                }
+            }
+    
+            .shopPromoDos {
+                height: 70vh;
+                width: 50%;
+    
+                &:hover {
+                    width: 70%;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    width: 30%;
+                    transition: all 2s;
+                }
+            }
+        }
+        
         .shopMenu {
             overflow: hidden;
             height: 5vh;
@@ -154,18 +214,18 @@
             flex-wrap: nowrap;
             justify-content: space-around;
             align-items: center;
-
-            .shopMenu:hover {
-                height: 25vh;
-                transition: all 2s;
-            }
     
-            .shopMenu:not(:hover) {
+            &:hover {
+                    height: 25vh;
+                    transition: all 2s;
+                }
+        
+            &:not(:hover) {
                 height: 5vh;
                 transition: all 2s;
             }
         }
-
+    
         .shopGaleria {
             width: 100vw;
             grid-column-start: 1;
@@ -177,7 +237,7 @@
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: center;
-
+    
             .categoriaContainer {
                 display: flex;
                 flex-direction: row;
@@ -185,8 +245,6 @@
                 align-items: baseline;
             }
         }
-
-    
     
         .shopMayoristas {
             height: 95vh;
@@ -201,7 +259,7 @@
             justify-content: space-around;
             align-items: center;
         }
-    
+        
         .shopContacto {
             height: 100vh;
             width: 100vw;
@@ -250,6 +308,36 @@
             flex-wrap: nowrap;
             justify-content: space-around;
             align-items: center;
+
+            .shopPromoUno {
+                height: 35vh;
+                width: 100%;
+    
+                &:hover {
+                    height: 50vh;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    height: 20vh;
+                    transition: all 2s;
+                }
+            }
+    
+            .shopPromoDos {
+                height: 35vh;
+                width: 100%;
+    
+                &:hover {
+                    height: 50vh;
+                    transition: all 2s;
+                }
+    
+                &:not(:hover) {
+                    height: 20vh;
+                    transition: all 2s;
+                }
+            }
         }
     
         .shopMenu {
@@ -266,12 +354,12 @@
             justify-content: space-around;
             align-items: center;
 
-            .shopMenu:hover {
+            &:hover {
                 height: 25vh;
                 transition: all 2s;
             }
     
-            .shopMenu:not(:hover) {
+            &:not(:hover) {
                 height: 5vh;
                 transition: all 2s;
             }

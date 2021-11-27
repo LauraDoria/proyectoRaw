@@ -1,17 +1,9 @@
 .menu {
-    background-color: #141D98;
+    background-color: $colorUno;
     list-style: none;
     width: 5vw;
-    overflow: hidden;
-    &:hover {
-        width: 25vw;
-        transition: all 2s;
-    }
+    overflow-x: hidden;
 
-    &:not(:hover) {
-        width: 5vw;
-        transition: all 2s;
-    }
     .menuContainer {
         position: sticky;
         top: 0;
@@ -55,21 +47,8 @@
         }
 
         a {
-            font-family: piepie, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #EDCCFF;
-            text-decoration: none;
-
-            &:hover {
-                color: #BF9C80;
-                transition: all 2s;
-            }
-
-            &:not(:hover) {
-                color: #EDCCFF;
-                transition: all 2s;
-            }
+            @extend %fuenteEnlaces;
+            @extend %linkPink;
         }
     }
     .menuContainerMobile {
@@ -84,13 +63,7 @@
         }
 
         .menuContainerMobile {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-family: piepie, sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            @extend %seccionPantallaCompleta;
 
             #menuConocenos {
                 grid-column-start: 1;
@@ -125,21 +98,8 @@
             }
     
             a {
-                font-family: piepie, sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #EDCCFF;
-                text-decoration: none;
-    
-                &:hover {
-                    color: #BF9C80;
-                    transition: all 2s;
-                }
-    
-                &:not(:hover) {
-                    color: #EDCCFF;
-                    transition: all 2s;
-                }
+                @extend %fuenteLink;
+                @extend %linkPink;
             }
         }
     }
@@ -151,13 +111,7 @@
         }
 
         .menuContainerMobile {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-family: piepie, sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            @extend %seccionPantallaCompleta;
 
             #menuConocenos {
                 grid-column-start: 1;
@@ -192,21 +146,8 @@
             }
     
             a {
-                font-family: piepie, sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #EDCCFF;
-                text-decoration: none;
-    
-                &:hover {
-                    color: #BF9C80;
-                    transition: all 2s;
-                }
-    
-                &:not(:hover) {
-                    color: #EDCCFF;
-                    transition: all 2s;
-                }
+                @extend %fuenteEnlaces;
+                @extend %linkPink;
             }
         } 
     }

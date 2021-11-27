@@ -1,9 +1,22 @@
 @charset "UTF-8";
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/*fuentes*/
+/*segunda fuente para titulos segun marca*/
+@font-face {
+  font-family: "julietamessie";
+  src: url("/src/fonts/julietamessie.otf") format("otf");
+}
+/*segunda fuente para titulos segun marca*/
+/* fuentes */
 /*Paleta de colores*/
 /*Paleta de colores*/
 /*Tamaño de fuente para desktop*/
@@ -175,7 +188,7 @@
 
 /*Textos*/
 /*Fuentes*/
-.indexContacto nav, .indexPortada h1, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .indexBlog .indexBlogBody .botonLink {
+.contacto nav, .indexPortada h1, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .indexBlog .indexBlogBody .botonLink {
   font-family: piepie, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -188,6 +201,436 @@
 }
 
 /*Fuentes*/
+.indexContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+.indexContainer .indexPortada {
+  height: 100vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.indexContainer .indexMenu {
+  overflow: hidden;
+  width: 5vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.indexContainer .indexMenu:hover {
+  width: 25vw;
+  transition: all 2s;
+}
+.indexContainer .indexMenu:not(:hover) {
+  width: 5vw;
+  transition: all 2s;
+}
+.indexContainer .indexConocenos {
+  height: 100vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.indexContainer .indexShop {
+  height: 100vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.indexContainer .indexShop .indexProductos {
+  flex-grow: 1;
+  height: 100vh;
+  width: 50%;
+}
+.indexContainer .indexShop .indexProductos:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.indexContainer .indexShop .indexProductos:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+.indexContainer .indexShop .indexMayoristas {
+  flex-grow: 1;
+  height: 100vh;
+  width: 50%;
+}
+.indexContainer .indexShop .indexMayoristas:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.indexContainer .indexShop .indexMayoristas:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+.indexContainer .indexBlog {
+  height: 100vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.indexContainer .indexBlog .indexBlogBody {
+  flex-grow: 1;
+  height: 100vh;
+  width: 50%;
+}
+.indexContainer .indexBlog .indexBlogBody:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.indexContainer .indexBlog .indexBlogBody:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+.indexContainer .indexBlog .indexSlider {
+  flex-grow: 1;
+  height: 100vh;
+  width: 50%;
+}
+.indexContainer .indexBlog .indexSlider:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.indexContainer .indexBlog .indexSlider:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+.indexContainer .indexContacto {
+  height: 100vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .indexContainer .indexContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .indexContainer .indexContainer .indexPortada {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexMenu .indexMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexMenu .indexMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexConocenos {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexShop {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexBlog {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexBlog .indexBlogBody {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+  .indexContainer .indexContainer .indexBlog .indexBlogBody:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexBlog .indexBlogBody:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexBlog .indexSlider {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+  .indexContainer .indexContainer .indexBlog .indexSlider:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexBlog .indexSlider:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .indexContainer .indexContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .indexContainer .indexContainer .indexPortada {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexMenu :hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexMenu :not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexConocenos {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexShop {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexShop p {
+    min-width: 90%;
+    max-width: 90%;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexProductos:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexShop .indexMayoristas:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+  .indexContainer .indexContainer .indexBlog {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .indexContainer .indexContainer .indexBlog p {
+    min-width: 90%;
+    max-width: 90%;
+  }
+  .indexContainer .indexContainer .indexBlog .indexBlogBody {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+  .indexContainer .indexContainer .indexBlog .indexSlider {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+  .indexContainer .indexContainer .indexContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .shopContainer {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -225,6 +668,30 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+}
+.shopContainer .shopPromociones .shopPromoUno {
+  height: 50vh;
+  width: 50%;
+}
+.shopContainer .shopPromociones .shopPromoUno:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.shopContainer .shopPromociones .shopPromoUno:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+.shopContainer .shopPromociones .shopPromoDos {
+  height: 50vh;
+  width: 50%;
+}
+.shopContainer .shopPromociones .shopPromoDos:hover {
+  width: 70%;
+  transition: all 2s;
+}
+.shopContainer .shopPromociones .shopPromoDos:not(:hover) {
+  width: 30%;
+  transition: all 2s;
 }
 .shopContainer .shopMenu {
   overflow: hidden;
@@ -321,6 +788,30 @@
     justify-content: space-around;
     align-items: center;
   }
+  .shopContainer .shopPromociones .shopPromoUno {
+    height: 70vh;
+    width: 50%;
+  }
+  .shopContainer .shopPromociones .shopPromoUno:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoUno:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoDos {
+    height: 70vh;
+    width: 50%;
+  }
+  .shopContainer .shopPromociones .shopPromoDos:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoDos:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
   .shopContainer .shopMenu {
     overflow: hidden;
     height: 5vh;
@@ -335,11 +826,11 @@
     justify-content: space-around;
     align-items: center;
   }
-  .shopContainer .shopMenu .shopMenu:hover {
+  .shopContainer .shopMenu:hover {
     height: 25vh;
     transition: all 2s;
   }
-  .shopContainer .shopMenu .shopMenu:not(:hover) {
+  .shopContainer .shopMenu:not(:hover) {
     height: 5vh;
     transition: all 2s;
   }
@@ -418,6 +909,30 @@
     justify-content: space-around;
     align-items: center;
   }
+  .shopContainer .shopPromociones .shopPromoUno {
+    height: 35vh;
+    width: 100%;
+  }
+  .shopContainer .shopPromociones .shopPromoUno:hover {
+    height: 50vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoUno:not(:hover) {
+    height: 20vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoDos {
+    height: 35vh;
+    width: 100%;
+  }
+  .shopContainer .shopPromociones .shopPromoDos:hover {
+    height: 50vh;
+    transition: all 2s;
+  }
+  .shopContainer .shopPromociones .shopPromoDos:not(:hover) {
+    height: 20vh;
+    transition: all 2s;
+  }
   .shopContainer .shopMenu {
     overflow: hidden;
     height: 5vh;
@@ -432,11 +947,11 @@
     justify-content: space-around;
     align-items: center;
   }
-  .shopContainer .shopMenu .shopMenu:hover {
+  .shopContainer .shopMenu:hover {
     height: 25vh;
     transition: all 2s;
   }
-  .shopContainer .shopMenu .shopMenu:not(:hover) {
+  .shopContainer .shopMenu:not(:hover) {
     height: 5vh;
     transition: all 2s;
   }
@@ -478,6 +993,455 @@
     grid-column-end: 2;
     grid-row-start: 6;
     grid-row-end: 7;
+  }
+}
+
+.blogContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  /* Tablet */
+  /* Tablet */
+  /* Mobile */
+  /* Mobile */
+}
+.blogContainer .blogPortada {
+  height: 50vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogContainer .blogMenu {
+  overflow: hidden;
+  width: 5vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogContainer .blogMenu:hover {
+  width: 25vw;
+  transition: all 2s;
+}
+.blogContainer .blogMenu:not(:hover) {
+  width: 5vw;
+  transition: all 2s;
+}
+.blogContainer .blogBlog {
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogContainer .blogBlog .blogNav {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogContainer .blogContacto {
+  height: 100vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .blogContainer .blogContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .blogContainer .blogContainer .blogPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogContainer .blogMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogContainer .blogMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .blogContainer .blogContainer .blogMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .blogContainer .blogContainer .blogBlog {
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogContainer .blogBlog .blogNav {
+    height: 50vh;
+  }
+  .blogContainer .blogContainer .blogContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blogContainer .blogContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .blogContainer .blogPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .blogContainer .blogMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .blogContainer .blogBlog {
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blogContainer .blogBlog .blogNav {
+    height: 50vh;
+  }
+  .blogContainer .blogContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.productoContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  /* Tablet */
+  /* Tablet */
+  /* Mobile */
+  /* Mobile */
+}
+.productoContainer .productoPortada {
+  height: 50vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.productoContainer .productoMenu {
+  overflow: hidden;
+  width: 5vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.productoContainer .productoMenu:hover {
+  width: 25vw;
+  transition: all 2s;
+}
+.productoContainer .productoMenu:not(:hover) {
+  width: 5vw;
+  transition: all 2s;
+}
+.productoContainer .productoSimilares {
+  height: 50vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.productoContainer .productoProducto {
+  height: 100vh;
+  width: 95vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.productoContainer .productoContacto {
+  height: 100vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .productoContainer .productoContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .productoContainer .productoContainer .productoPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .productoContainer .productoContainer .productoMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .productoContainer .productoContainer .productoSimilares {
+    height: 65vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoProducto {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+@media screen and (max-width: 480px) {
+  .productoContainer .productoContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .productoContainer .productoContainer .productoPortada {
+    height: 30vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+  .productoContainer .productoContainer .productoMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+  .productoContainer .productoContainer .productoSimilares {
+    height: 65vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoProducto {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productoContainer .productoContainer .productoContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
   }
 }
 
@@ -764,7 +1728,7 @@
 }
 
 /*sección contacto en todas las páginas*/
-.indexContacto {
+.contacto {
   height: 100vh;
   width: 100%;
   background-color: #EDCCFF;
@@ -778,14 +1742,14 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
-.indexContacto nav {
+.contacto nav {
   margin-right: 2%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   align-items: baseline;
 }
-.indexContacto nav .backToTop {
+.contacto nav .backToTop {
   font-size: 12vh;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -794,25 +1758,25 @@
   text-decoration: none;
   color: #141D98;
 }
-.indexContacto nav .backToTop:hover {
+.contacto nav .backToTop:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.indexContacto nav .backToTop:not(:hover) {
+.contacto nav .backToTop:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.indexContacto nav .whatsappLogo {
+.contacto nav .whatsappLogo {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
   color: #141D98;
 }
-.indexContacto nav .whatsappLogo img {
+.contacto nav .whatsappLogo img {
   height: 10vh;
 }
-.indexContacto nav .whatsapp {
+.contacto nav .whatsapp {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -821,25 +1785,25 @@
   color: #141D98;
   font-size: 4vh;
 }
-.indexContacto nav .whatsapp:hover {
+.contacto nav .whatsapp:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.indexContacto nav .whatsapp:not(:hover) {
+.contacto nav .whatsapp:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.indexContacto nav .instagramLogo {
+.contacto nav .instagramLogo {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
   color: #141D98;
 }
-.indexContacto nav .instagramLogo img {
+.contacto nav .instagramLogo img {
   height: 10vh;
 }
-.indexContacto nav .instagram {
+.contacto nav .instagram {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -848,29 +1812,29 @@
   color: #141D98;
   font-size: 4vh;
 }
-.indexContacto nav .instagram:hover {
+.contacto nav .instagram:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.indexContacto nav .instagram:not(:hover) {
+.contacto nav .instagram:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.indexContacto nav div a {
+.contacto nav div a {
   color: #141D98;
   text-decoration: none;
 }
-.indexContacto nav div a img {
+.contacto nav div a img {
   height: 12vh;
 }
-.indexContacto nav div a h2 {
+.contacto nav div a h2 {
   font-size: 4vh;
 }
-.indexContacto nav div a:hover {
+.contacto nav div a:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.indexContacto nav div a:not(:hover) {
+.contacto nav div a:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }

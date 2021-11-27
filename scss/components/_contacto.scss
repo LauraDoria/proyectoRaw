@@ -1,5 +1,5 @@
 /*sección contacto en todas las páginas*/
-.indexContacto {
+.contacto {
     @include sectionSizes($alturaUno, $anchoUno);
     background-color: $colorDos;
     background-image: url("/src/images/footer-background.svg");

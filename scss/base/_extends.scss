@@ -85,6 +85,34 @@
         transition: all 2s;
     }
 }
+
+%linkPink {
+    color: $colorDos;
+
+    &:hover {
+        color: $colorTres;
+        transition: all 2s;
+    }
+
+    &:not(:hover) {
+        color: $colorDos;
+        transition: all 2s;
+    }
+}
+
+%linkBlue {
+    color: $colorUno;
+
+    &:hover {
+        color: $colorTres;
+        transition: all 2s;
+    }
+    
+    &:not(:hover) {
+        color: $colorUno;
+        transition: all 2s;
+    }
+}
 /*Hovers*/
 
 /*Textos*/
@@ -102,6 +130,14 @@
     font-weight: 400;
     font-style: normal;
 }
+
+%fuenteEnlaces {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
 %fuenteParrafos {
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
