@@ -1,7 +1,7 @@
 .menu {
     background-color: $colorUno;
     list-style: none;
-    width: 5vw;
+    width: $anchoSiete;
     overflow-x: hidden;
 
     .menuContainer {
@@ -55,6 +55,7 @@
         display: none;
     }
 
+    /*Tablet*/
     @media screen and (min-width: 481px) and (max-width: 1024px) {
         position: sticky;
 
@@ -63,46 +64,21 @@
         }
 
         .menuContainerMobile {
-            @extend %seccionPantallaCompleta;
+            height: $alturaSeis;
+            width: $anchoUno;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
 
-            #menuConocenos {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                font-size: 6vh;
-            }
-            
-            #menuShop {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                font-size: 6vh;
-            }
-            
-            #menuBlog {
-                grid-column-start: 2;
-                grid-column-end: 3;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                font-size: 6vh;
-            }
-            
-            #menuContacto {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 3;
-                grid-row-end: 4;
-                font-size: 6vh;
-            }
-    
             a {
-                @extend %fuenteLink;
-                @extend %linkPink;
+                font-size: $sizeCinco;
             }
         }
     }
+    /*Tablet*/
+
+    /*Mobile*/
     @media screen and (max-width: 480px) {
         position: sticky;
 
@@ -111,44 +87,17 @@
         }
 
         .menuContainerMobile {
-            @extend %seccionPantallaCompleta;
+            height: $alturaSeis;
+            width: $anchoUno;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
 
-            #menuConocenos {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                font-size: 3vh;
-            }
-            
-            #menuShop {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                font-size: 3vh;
-            }
-            
-            #menuBlog {
-                grid-column-start: 2;
-                grid-column-end: 3;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                font-size: 3vh;
-            }
-            
-            #menuContacto {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 3;
-                grid-row-end: 4;
-                font-size: 3vh;
-            }
-    
             a {
-                @extend %fuenteEnlaces;
-                @extend %linkPink;
+                font-size: $sizeCincoMobile;
             }
-        } 
+        }
     }
+    /*Mobile*/
 }

@@ -6,11 +6,9 @@
     background-repeat: no-repeat;
     background-size: $alturaUno;
     background-position: center;
-    display: flex;
-    flex-direction: row;
+    @extend %flexRowTres;
     flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
+
     nav {
         margin-right: 2%;
         display: grid;

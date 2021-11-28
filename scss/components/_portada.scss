@@ -2,7 +2,7 @@
 .indexPortada {
     @include sectionSizes($alturaUno, $anchoUno);
     background-color: nth($colores, 2);
-    @extend %seccionPantallaCompleta;
+    @extend %flexRowDos;
     h1 {
         font-size: $sizeUno;
         a {
@@ -10,9 +10,11 @@
             @extend %linkBlue;
         }
     }
+
     @media screen and (min-width: 481px) and (max-width: 1024px) {
         font-size: $sizeUnoMobile;
     }
+    
     @media screen and (max-width: 480px) {
         font-size: $sizeTresMobile;
     }

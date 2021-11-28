@@ -8,7 +8,19 @@
         min-width: $parrafoTres;
         max-width: $parrafoTres;
         text-align: $parrafoJustify;
+        font-size: $sizeSeis;
         @extend %fuenteParrafos;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        min-width: $parrafoUno;
+        max-width: $parrafoUno;
+        font-size: $sizeSeisMobile; 
+    }
+    @media screen and (max-width: 480px) {
+        min-width: $parrafoUno;
+        max-width: $parrafoUno;
+        font-size: $sizeSeisMobile; 
     }
 }
 /*sección Conocenos en index.html*/
