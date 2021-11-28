@@ -1,8 +1,7 @@
 
 .shopContainer {
     overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
+    width: $anchoUno;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
@@ -37,31 +36,13 @@
         .shopPromoUno {
             height: 50vh;
             width: 50%;
-
-            &:hover {
-                width: 70%;
-                transition: all 2s;
-            }
-
-            &:not(:hover) {
-                width: 30%;
-                transition: all 2s;
-            }
+            @extend %hoverSeccionesDesktop;
         }
 
         .shopPromoDos {
             height: 50vh;
             width: 50%;
-
-            &:hover {
-                width: 70%;
-                transition: all 2s;
-            }
-
-            &:not(:hover) {
-                width: 30%;
-                transition: all 2s;
-            }
+            @extend %hoverSeccionesDesktop;
         }
     }
 
@@ -78,15 +59,7 @@
         justify-content: space-around;
         align-items: center;
 
-        &:hover {
-            width: 25vw;
-            transition: all 2s;
-        }
-
-        &:not(:hover) {
-            width: 5vw;
-            transition: all 2s;
-        }
+        @extend %hoverMenu;
     }
 
     .shopGaleria {

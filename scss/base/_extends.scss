@@ -45,28 +45,35 @@
 /*Botones*/
 
 /*Flexbox*/
-%dosSubseccionesRow {
+%flexRowUno {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-%seccionPantallaCompleta {
+%flexRowDos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-%elementosColumn {
+%flexRowTres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+%flexColUno {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-%dosSubseccionesColumn {
+%flexColDos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -110,6 +117,18 @@
     
     &:not(:hover) {
         color: $colorUno;
+        transition: all 2s;
+    }
+}
+
+%hoverMenu {
+    &:hover {
+        width: $anchoSeis;
+        transition: all 2s;
+    }
+    
+    &:not(:hover) {
+        width: $anchoSiete;
         transition: all 2s;
     }
 }
