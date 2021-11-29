@@ -1,14 +1,14 @@
 .indexBlog {
-    @extend %dosSubseccionesRow;
-    height: 100vw;
-    width: 95vw;
+    @extend %flexRowUno;
+    height: $alturaUno;
+    width: $anchoDos;
     color: nth($colores, 1);
     .indexBlogBody {
-        height: nth($heights, 1);
-        width: nth($widths, 4);
-        @extend %elementosColumn;
+        height: $alturaUno;
+        width: $anchoCuatro;
+        @extend %flexColUno;
         flex-grow: 1;
-        background-color: nth($colores, 3);
+        background-color: $colorTres;
         @extend %hoverSeccionesDesktop;
         .botonLink {
             @extend %botonesDos;
@@ -19,14 +19,14 @@
         }
     }
     .indexSlider {
-        height: nth($heights, 1);
-        width: nth($widths, 4);
-        @extend %dosSubseccionesColumn;
+        height: $alturaUno;
+        width: $anchoDos;
+        @extend %flexColUno;
         flex-grow: 1;
-        background-color: nth($colores, 5);
+        background-color: $colorCinco;
         @extend %hoverSeccionesDesktop;
         img {
-            height: nth($heights, 1);
+            height: $alturaUno;
         }
     }
 }

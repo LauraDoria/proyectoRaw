@@ -1,12 +1,12 @@
 .indexShop {
-    @extend %dosSubseccionesRow;
+    @extend %flexRowUno;
     height: 100vw;
     width: 95vw;
     color: nth($colores, 1);
     .indexMayoristas {
         height: nth($heights, 1);
         width: nth($widths, 4);
-        @extend %elementosColumn;
+        @extend %flexColDos;
         flex-grow: 1;
         background-color: nth($colores, 2);
         @extend %hoverSeccionesDesktop;
@@ -21,7 +21,7 @@
     .indexProductos {
         height: nth($heights, 1);
         width: nth($widths, 4);
-        @extend %dosSubseccionesColumn;
+        @extend %flexRowDos;
         flex-grow: 1;
         background-color: nth($colores, 4);
         @extend %hoverSeccionesDesktop;

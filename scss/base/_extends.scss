@@ -69,6 +69,13 @@
 %flexRowCuatro {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+%flexRowCuatro {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
 }

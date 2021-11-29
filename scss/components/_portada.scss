@@ -1,6 +1,5 @@
 /*sección portada en todas las páginas*/
-.indexPortada {
-    @include sectionSizes($alturaUno, $anchoUno);
+.portada {
     background-color: nth($colores, 2);
     @extend %flexRowDos;
     h1 {

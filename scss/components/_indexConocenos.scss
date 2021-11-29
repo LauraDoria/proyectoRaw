@@ -1,10 +1,9 @@
 /*sección Conocenos en index.html*/
-@import "./base/extends";
 
 .indexConocenos {
     @include sectionSizes($alturaUno, $anchoDos);
     background-color: $colorCinco;
-    @extend %FlexColDos;
+    @extend %flexColTres;
     p {
         color: nth($colores, 1);;
         min-width: $parrafoTres;

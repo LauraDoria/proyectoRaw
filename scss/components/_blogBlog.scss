@@ -1,0 +1,39 @@
+/* Blog en blog.html */
+.blogBlog {
+    background-color: #FCB580;
+    color: #141D98;
+
+    h2 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20vh;
+        margin-left: 2vw;
+    }
+
+    h3 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18vh;
+        margin-left: 2vw;
+    }
+
+    p {
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3vh;
+        margin-left: 2vw;
+    }
+
+    .blogItem {
+        padding-bottom: 5vh;
+    }
+
+    a {
+        @extend %botonesDos;
+        margin: 2vw;
+    }
+}
+/* Blog en blog.html */

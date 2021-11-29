@@ -1,0 +1,50 @@
+/* Galería en shop.html */
+.shopGaleria {
+    background-color: #FCB580;
+    color: #141D98;
+
+    h2 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20vh;
+        white-space: nowrap;
+        margin-left: 5%;
+    }
+
+    h3 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18vh;
+        white-space: nowrap;
+        margin-left: 5%;
+    }
+
+    p {
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4vh;
+        min-width: 15vw;
+        max-width: 15vw;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        p {
+            font-size: 3vh;
+            min-width: 15vw;
+            max-width: 15vw;
+        } 
+    }
+
+    @media  screen and (max-width: 480px) {
+        p {
+            font-size: 2vh;
+            min-width: 50vw;
+            max-width: 50vw;
+        } 
+    }
+}
+/* Galería en shop.html */

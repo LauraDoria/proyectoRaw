@@ -1,0 +1,147 @@
+.shopPromociones {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #141D98;
+    font-size: 3vh;
+
+    p {
+        min-width: 27vw;
+        max-width: 27vw;
+        text-align: justify;
+    }
+
+    .shopPromoUno {
+        height: 50vh;
+        width: 50vw;
+        flex-grow: 1;
+        background-color: #BF9C80;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            @extend %botonesDos;
+            margin: 2vw;
+        }
+    
+        .shopPromoUno:hover {
+            width: 70vw;
+            transition: all 2s;
+        }
+        
+        .shopPromoUno:not(:hover) {
+            width: 30vw;
+            transition: all 2s;
+        }
+    }
+    
+    .shopPromoDos {
+        height: 50vh;
+        width: 50vw;
+        flex-grow: 1;
+        background-color: #12B5E3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            @extend %botonesUno;
+            margin: 2vw;
+        }
+    
+        .shopPromoDos:hover {
+            width: 70vw;
+            transition: all 2s;
+        }
+        
+        .shopPromoDos:not(:hover) {
+            width: 30vw;
+            transition: all 2s;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        .shopPromociones {
+            font-size: 2vh;
+
+            .shopPromoUno {
+                height: 70vh;
+                width: 50vw;
+    
+                .shopPromoUno:hover {
+                    width: 70vw;
+                    transition: all 2s;
+                }
+                
+                .shopPromoUno:not(:hover) {
+                    width: 30vw;
+                    transition: all 2s;
+                }
+            }
+            
+            .shopPromoDos {
+                height: 70vh;
+                width: 50vw;
+    
+                .shopPromoDos:hover {
+                    width: 70vw;
+                    transition: all 2s;
+                }
+                
+                .shopPromoDos:not(:hover) {
+                    width: 30vw;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+
+    @media  screen and (max-width: 480px) {
+        .shopPromociones {
+            font-size: 2vh;
+
+            p {
+                min-width: 90vw;
+                max-width: 90vw;
+            }
+
+            .shopPromoUno {
+                flex-grow: 1;
+                height: 35vh;
+                width: 100vw;
+    
+                &:hover {
+                    height: 50vh;
+                    transition: all 2s;
+                }
+                
+                &:not(:hover) {
+                    height: 20vh;
+                    transition: all 2s;
+                }
+            }
+            
+            .shopPromoDos {
+                flex-wrap: 1;
+                height: 35vh;
+                width: 100vw;
+    
+                &:hover {
+                    height: 50vh;
+                    transition: all 2s;
+                }
+                
+                &:not(:hover) {
+                    height: 20vh;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+}
+
+
+

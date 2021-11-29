@@ -1,0 +1,49 @@
+/* Similares en producto1.html */
+.productosSimilares {
+    background-color: #12B5E3;
+    color: #141D98;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+    h4 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p {
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        min-width: 15vw;
+        max-width: 15vw;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .similaresTitulo {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 4vh;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .similaresItemUno {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .similaresItemDos {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+/* Similares en producto1.html */

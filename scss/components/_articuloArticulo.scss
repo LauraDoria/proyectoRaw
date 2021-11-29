@@ -1,0 +1,46 @@
+/* Artículo en articulo1.html */
+.articuloArticulo {
+    background-color: #FCB580;
+    color: #141D98;
+
+    a {
+        @extend %botonesDos;
+        margin: 2vw;
+    }
+
+    .articuloNav {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .articuloBody {
+        h2 {
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20vh;
+            margin-left: 2vw;
+        }
+
+        h3 {
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18vh;
+            margin-left: 2vw;
+        }
+
+        p {
+            font-family: myriad-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3vh;
+            margin-left: 2vw;
+            min-width: 80vw;
+            max-width: 80vw;
+            text-align: justify;
+        }
+    }
+}
+/* Artículo en articulo1.html */
