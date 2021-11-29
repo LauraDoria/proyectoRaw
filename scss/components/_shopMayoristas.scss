@@ -1,16 +1,14 @@
 /* Mayoristas en shop.html */
 .shopMayoristas {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #12B5E3;
-    color: #141D98;
-    font-size: 3vh;
+    @extend %fuenteParrafos;
+    background-color: $colorCuatro;
+    color: $colorUno;
+    font-size: $sizeSeis;
 
     p {
-        min-width: 60vw;
-        max-width: 60vw;
-        text-align: justify;
+        min-width: $parrafoCuatro;
+        max-width: $parrafoCuatro;
+        text-align: $parrafoJustify;
     }
 
     a {
@@ -20,15 +18,15 @@
 
     @media screen and (min-width: 481px) and (max-width: 1024px) {
         p {
-            min-width: 80vw;
-            max-width: 80vw;
+            min-width: $parrafoDos;
+            max-width: $parrafoDos;
         }
     }
     
     @media  screen and (max-width: 480px) {
         p {
-            min-width: 80vw;
-            max-width: 80vw; 
+            min-width: $parrafoDos;
+            max-width: $parrafoDos; 
         }
     }
 }

@@ -4,6 +4,7 @@
     @include sectionSizes($alturaUno, $anchoDos);
     background-color: $colorCinco;
     @extend %flexColTres;
+
     p {
         color: nth($colores, 1);;
         min-width: $parrafoTres;
@@ -18,6 +19,7 @@
         max-width: $parrafoUno;
         font-size: $sizeSeisMobile; 
     }
+    
     @media screen and (max-width: 480px) {
         min-width: $parrafoUno;
         max-width: $parrafoUno;

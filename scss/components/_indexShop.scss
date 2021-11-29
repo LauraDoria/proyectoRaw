@@ -1,15 +1,17 @@
 .indexShop {
     @extend %flexRowUno;
-    height: 100vw;
-    width: 95vw;
-    color: nth($colores, 1);
+    height: $alturaUno;
+    width: $anchoDos;
+    color: $colorUno;
+
     .indexMayoristas {
-        height: nth($heights, 1);
-        width: nth($widths, 4);
-        @extend %flexColDos;
+        height: $alturaUno;
+        width: $anchoCuatroPorcentaje;
         flex-grow: 1;
-        background-color: nth($colores, 2);
+        background-color: $colorDos;
+        @extend %flexColDos;
         @extend %hoverSeccionesDesktop;
+
         .botonLink {
             @extend %botonesUno;
         }
@@ -18,13 +20,15 @@
             @extend %fuenteParrafos;
         }
     }
+
     .indexProductos {
-        height: nth($heights, 1);
-        width: nth($widths, 4);
-        @extend %flexRowDos;
+        height: $alturaUno;
+        width: $anchoCuatroPorcentaje;
         flex-grow: 1;
-        background-color: nth($colores, 4);
+        background-color: $colorCuatro;
+        @extend %flexRowDos;
         @extend %hoverSeccionesDesktop;
+
         .botonLink {
             @extend %botonesUno;
         }

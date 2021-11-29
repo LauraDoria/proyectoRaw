@@ -1,7 +1,7 @@
 /* Artículo en articulo1.html */
 .articuloArticulo {
-    background-color: #FCB580;
-    color: #141D98;
+    background-color: $colorCinco;
+    color: $colorUno;
 
     a {
         @extend %botonesDos;
@@ -9,38 +9,37 @@
     }
 
     .articuloNav {
-        font-family: piepie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        @extend %fuenteTitulos;
     }
 
     .articuloBody {
         h2 {
-            font-family: piepie, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 20vh;
+            @extend %fuenteTitulos;
+            font-size: $sizeUno;
             margin-left: 2vw;
+            white-space: nowrap;
+
+            &:hover {
+                transform: translateX(100px);
+            }
         }
 
         h3 {
-            font-family: piepie, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 18vh;
+            @extend %fuenteTitulos;
+            font-size: $sizeSiete;
             margin-left: 2vw;
         }
 
-        p {
-            font-family: myriad-pro, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 3vh;
-            margin-left: 2vw;
-            min-width: 80vw;
-            max-width: 80vw;
-            text-align: justify;
-        }
+    }
+
+    p {
+        @extend %fuenteParrafos;
+        font-size: $sizeSeis;
+        margin-left: 2vw;
+        min-width: $parrafoDos;
+        max-width: $parrafoDos;
+        text-align: $parrafoJustify;
     }
 }
+
 /* Artículo en articulo1.html */

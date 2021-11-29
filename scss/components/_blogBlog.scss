@@ -1,29 +1,23 @@
 /* Blog en blog.html */
 .blogBlog {
-    background-color: #FCB580;
-    color: #141D98;
+    background-color: $colorCinco;
+    color: $colorUno;
 
     h2 {
-        font-family: piepie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 20vh;
+        @extend %fuenteTitulos;
+        font-size: $sizeUno;
         margin-left: 2vw;
     }
 
     h3 {
-        font-family: piepie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18vh;
+        @extend %fuenteTitulos;
+        font-size: $sizeSiete;
         margin-left: 2vw;
     }
 
     p {
-        font-family: myriad-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 3vh;
+        @extend %fuenteParrafos;
+        font-size: $sizeSeis;
         margin-left: 2vw;
     }
 

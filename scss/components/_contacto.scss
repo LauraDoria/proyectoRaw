@@ -16,6 +16,7 @@
         grid-template-rows: auto auto auto;
         align-items: baseline;
         @extend %fuenteTitulos;
+
         .backToTop {
             font-size: $sizeCuatro;
             grid-column-start: 1;
@@ -24,15 +25,9 @@
             grid-row-end: 2;
             text-decoration: none;
             color: nth($colores, 1);
-            &:hover {
-                color: $colorTres;
-                transition: all 2s;
-            }
-            &:not(:hover) {
-                color: $colorUno;
-                transition: all 2s;
-            }
+            @extend %linkBlue;
         }
+
         .whatsappLogo {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -43,6 +38,7 @@
                 height: 10vh;
             }
         }
+        
         .whatsapp {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -51,15 +47,9 @@
             text-decoration: none;
             color: nth($colores, 1);
             font-size: $sizeCinco;
-            &:hover {
-                color: $colorTres;
-                transition: all 2s;
-            }
-            &:not(:hover) {
-                color: $colorUno;
-                transition: all 2s;
-            }
+            @extend %linkBlue;
         }
+
         .instagramLogo {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -70,6 +60,7 @@
                 height: 10vh;
             }
         }
+
         .instagram {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -78,32 +69,21 @@
             text-decoration: none;
             color: nth($colores, 1);
             font-size: $sizeCinco;
-            &:hover {
-                color: $colorTres;
-                transition: all 2s;
-            }
-            &:not(:hover) {
-                color: $colorUno;
-                transition: all 2s;
-            }
+            @extend %linkBlue;
         }
+
         div {
             a {
                 color: $colorUno;
                 text-decoration: none;
+                @extend %linkBlue;
+
                 img {
                     height: $sizeTres;
                 }
+
                 h2 {
                     font-size: $sizeCinco;
-                }
-                &:hover {
-                    color: $colorTres;
-                    transition: all 2s;
-                }
-                &:not(:hover) {
-                    color: $colorUno;
-                    transition: all 2s;
                 }
             }
         }

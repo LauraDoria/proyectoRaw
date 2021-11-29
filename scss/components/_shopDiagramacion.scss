@@ -29,12 +29,14 @@
         flex-wrap: nowrap;
 
         .shopPromoUno {
+            overflow-x: hidden;
             height: $alturaCuatro;
             width: $anchoCuatro;
             @extend %hoverSeccionesDesktop;
         }
 
         .shopPromoDos {
+            overflow-x: hidden;
             height: $alturaCuatro;
             width: $anchoCuatro;
             @extend %hoverSeccionesDesktop;
@@ -59,7 +61,7 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
-        @extend %flexColTres;
+        @extend %flexColCuatro;
         flex-wrap: nowrap;
 
         .categoriaContainer {

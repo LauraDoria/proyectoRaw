@@ -1,25 +1,21 @@
 /* Similares en producto1.html */
-.productosSimilares {
-    background-color: #12B5E3;
-    color: #141D98;
+.productoSimilares {
+    background-color: $colorCinco;
+    color: $colorUno;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 
     h4 {
-        font-family: piepie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        @extend %fuenteTitulos;
     }
 
     p {
-        font-family: myriad-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        min-width: 15vw;
-        max-width: 15vw;
+        @extend %fuenteParrafos;
+        min-width: $parrafoOcho;
+        max-width: $parrafoOcho;
         text-align: center;
-        font-size: 2vh;
+        font-size: $sizeSeisMobile;
     }
 
     .similaresTitulo {
@@ -27,7 +23,7 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        font-size: 4vh;
+        font-size: $sizeCinco;
         align-self: center;
         justify-self: center;
     }
