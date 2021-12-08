@@ -7,35 +7,76 @@
         @extend %fuenteTitulos;
         font-size: $sizeUno;
         white-space: nowrap;
-        margin-left: 5%;
+        margin-left: 2vw;
     }
 
     h3 {
         @extend %fuenteTitulos;
         font-size: $sizeSiete;
         white-space: nowrap;
-        margin-left: 5%;
+        margin-left: 2vw;
     }
 
     p {
         @extend %fuenteParrafos;
         font-size: $sizeCinco;
-        min-width: $parrafoOcho;
-        max-width: $parrafoOcho;
+        min-width: 15vw;
+        max-width: 15vw;
         text-align: center;
     }
 
+    .categoriaContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+        .categoriaItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1vw;
+        }
+    
+        img {
+            height: 45vh;
+    
+            &:hover {
+                transform: rotate(180deg);
+                transition: all 4s;
+            }
+    
+            &:not(:hover) {
+                transform: rotate(0deg);
+                transition: all 4s;
+            }
+        }
+    }
+
     @media screen and (min-width: 481px) and (max-width: 1024px) {
-        p {
-            font-size: $sizeCincoMobile;
-        } 
+        .categoriaContainer {
+            p {
+                font-size: $sizeCincoMobile;
+                min-width: $parrafoTres;
+                max-width: $parrafoTres;
+            } 
+        }
     }
 
     @media  screen and (max-width: 480px) {
+        .categoriaContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         } 
+
         p {
             font-size: $sizeSeisMobile;
-            min-width: $parrafoCinco;
-            max-width: $parrafoCinco;
+            min-width: $parrafoTres;
+            max-width: $parrafoTres;
         } 
     }
 }

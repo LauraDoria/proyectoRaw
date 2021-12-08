@@ -61,13 +61,6 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
-        @extend %flexColCuatro;
-        flex-wrap: nowrap;
-
-        .categoriaContainer {
-            @extend %flexRowCuatro;
-            flex-wrap: wrap;
-        }
     }
 
     .shopMayoristas {

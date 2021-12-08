@@ -4,6 +4,20 @@
     width: $anchoSiete;
     overflow-x: hidden;
 
+    &:hover {
+        .menuContainer {
+            opacity: 100;
+            transition: all 2s;
+        }
+    }
+
+    &:not(:hover) {
+        .menuContainer {
+            opacity: 0;
+            transition: all 2s;
+        }
+    }
+
     .menuContainer {
         position: sticky;
         top: 0;

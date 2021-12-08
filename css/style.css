@@ -22,10 +22,11 @@ html {
 /*Tamaño de fuente para desktop*/
 /*Para portadas*/
 /*Para h2*/
-/*Para h3 y menu*/
+/*Para h3*/
 /*Para h4*/
 /*Para texto de botones*/
 /*Para textos*/
+/*Para h3*/
 /*Tamaño de fuente para desktop*/
 /*Tamaño de fuente para tablet y mobile*/
 /*Para portadas*/
@@ -70,10 +71,11 @@ html {
 /*Tamaño de fuente para desktop*/
 /*Para portadas*/
 /*Para h2*/
-/*Para h3 y menu*/
+/*Para h3*/
 /*Para h4*/
 /*Para texto de botones*/
 /*Para textos*/
+/*Para h3*/
 /*Tamaño de fuente para desktop*/
 /*Tamaño de fuente para tablet y mobile*/
 /*Para portadas*/
@@ -100,7 +102,7 @@ html {
 /*Border radius*/
 /*Border radius*/
 /*Botones*/
-.shopMayoristas a, .shopPromociones .shopPromoDos a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink {
+.shopMayoristas a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink {
   background-color: #141D98;
   color: #EDCCFF;
   font-size: 4vh;
@@ -108,19 +110,20 @@ html {
   margin: 5vh;
   border-radius: 4vh;
   text-decoration: none;
+  white-space: nowrap;
 }
-.shopMayoristas a:hover, .shopPromociones .shopPromoDos a:hover, .indexShop .indexProductos .botonLink:hover, .indexShop .indexMayoristas .botonLink:hover {
+.shopMayoristas a:hover, .indexShop .indexProductos .botonLink:hover, .indexShop .indexMayoristas .botonLink:hover {
   background-color: #FCB580;
   color: #141D98;
   transition: all 2s;
 }
-.shopMayoristas a:not(:hover), .shopPromociones .shopPromoDos a:not(:hover), .indexShop .indexProductos .botonLink:not(:hover), .indexShop .indexMayoristas .botonLink:not(:hover) {
+.shopMayoristas a:not(:hover), .indexShop .indexProductos .botonLink:not(:hover), .indexShop .indexMayoristas .botonLink:not(:hover) {
   background-color: #141D98;
   color: #EDCCFF;
   transition: all 2s;
 }
 
-.articuloArticulo a, .blogBlog a, .shopPromociones .shopPromoUno a, .indexBlog .indexBlogBody .botonLink {
+.articuloArticulo a, .blogBlog a, .indexBlog .indexBlogBody .botonLink {
   background-color: #141D98;
   color: #EDCCFF;
   font-size: 4vh;
@@ -128,13 +131,14 @@ html {
   margin: 5vh;
   border-radius: 4vh;
   text-decoration: none;
+  white-space: nowrap;
 }
-.articuloArticulo a:hover, .blogBlog a:hover, .shopPromociones .shopPromoUno a:hover, .indexBlog .indexBlogBody .botonLink:hover {
+.articuloArticulo a:hover, .blogBlog a:hover, .indexBlog .indexBlogBody .botonLink:hover {
   background-color: #12B5E3;
   color: #141D98;
   transition: all 2s;
 }
-.articuloArticulo a:not(:hover), .blogBlog a:not(:hover), .shopPromociones .shopPromoUno a:not(:hover), .indexBlog .indexBlogBody .botonLink:not(:hover) {
+.articuloArticulo a:not(:hover), .blogBlog a:not(:hover), .indexBlog .indexBlogBody .botonLink:not(:hover) {
   background-color: #141D98;
   color: #EDCCFF;
   transition: all 2s;
@@ -142,7 +146,7 @@ html {
 
 /*Botones*/
 /*Flexbox*/
-.indexBlog, .indexShop, .articuloContainer .articuloArticulo .articuloNav, .articuloContainer .articuloMenu, .productoContainer .productoMenu, .shopContainer .shopMenu, .shopContainer .shopPromociones, .shopContainer .shopPortada, .indexContainer .indexBlog, .indexContainer .indexShop, .indexContainer .indexMenu, .indexContainer .indexPortada {
+.productoProducto, .indexBlog, .indexShop, .articuloContainer .articuloArticulo .articuloNav, .articuloContainer .articuloMenu, .productoContainer .productoMenu, .shopContainer .shopMenu, .shopContainer .shopPromociones, .shopContainer .shopPortada, .indexContainer .indexBlog, .indexContainer .indexShop, .indexContainer .indexMenu, .indexContainer .indexPortada {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -163,20 +167,6 @@ html {
   align-items: center;
 }
 
-.contacto, .shopContainer .shopGaleria .categoriaContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.contacto, .shopContainer .shopGaleria .categoriaContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
-
 .indexBlog .indexSlider, .indexBlog .indexBlogBody, .shopContainer .shopMayoristas, .indexContainer .indexConocenos {
   display: flex;
   flex-direction: column;
@@ -191,7 +181,7 @@ html {
   align-items: center;
 }
 
-.indexConocenos, .shopContainer .shopGaleria {
+.indexConocenos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -253,7 +243,7 @@ html {
 
 /*Textos*/
 /*Fuentes*/
-.contacto nav, .shopMayoristas a, .shopPromociones .shopPromoDos a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .articuloArticulo a, .blogBlog a, .shopPromociones .shopPromoUno a, .indexBlog .indexBlogBody .botonLink {
+.articuloArticulo .articuloBody h3, .articuloArticulo .articuloBody h2, .articuloArticulo .articuloNav, .productoProducto h3, .productoProducto h2, .productoSimilares h4, .blogBlog h3, .blogBlog h2, .shopGaleria h3, .shopGaleria h2, .shopMayoristas a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .articuloArticulo a, .blogBlog a, .indexBlog .indexBlogBody .botonLink {
   font-family: piepie, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -266,7 +256,7 @@ html {
   text-decoration: none;
 }
 
-.indexBlog .indexBlogBody p, .indexShop .indexMayoristas p, .indexConocenos p {
+.articuloArticulo p, .productoProducto p, .productoSimilares p, .blogBlog p, .shopMayoristas, .shopGaleria p, .indexBlog .indexBlogBody p, .indexShop .indexMayoristas p, .indexConocenos p {
   font-family: myriad-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -693,10 +683,12 @@ html {
   flex-wrap: nowrap;
 }
 .shopContainer .shopPromociones .shopPromoUno {
+  overflow-x: hidden;
   height: 50vh;
   width: 50vw;
 }
 .shopContainer .shopPromociones .shopPromoDos {
+  overflow-x: hidden;
   height: 50vh;
   width: 50vw;
 }
@@ -715,10 +707,6 @@ html {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  flex-wrap: nowrap;
-}
-.shopContainer .shopGaleria .categoriaContainer {
-  flex-wrap: wrap;
 }
 .shopContainer .shopMayoristas {
   overflow-x: hidden;
@@ -1620,6 +1608,14 @@ html {
   /*Mobile*/
   /*Mobile*/
 }
+.menu:hover .menuContainer {
+  opacity: 100;
+  transition: all 2s;
+}
+.menu:not(:hover) .menuContainer {
+  opacity: 0;
+  transition: all 2s;
+}
 .menu .menuContainer {
   position: sticky;
   top: 0;
@@ -1730,7 +1726,7 @@ html {
 
 /*sección Conocenos en index.html*/
 .indexShop {
-  height: 100vw;
+  height: 100vh;
   width: 95vw;
   color: #141D98;
 }
@@ -1767,115 +1763,140 @@ html {
   height: 100vh;
 }
 
-/*sección contacto en todas las páginas*/
+/* Contacto */
 .contacto {
-  height: 100vh;
-  width: 100vw;
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #EDCCFF;
   background-image: url("/src/images/footer-background.svg");
   background-repeat: no-repeat;
-  background-size: 100vh;
   background-position: center;
-  flex-wrap: nowrap;
+  background-size: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
-.contacto nav {
-  margin-right: 2%;
+.contacto .contactoContainer {
+  padding-top: 2%;
+  padding-right: 10%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 5% 20%;
   grid-template-rows: auto auto auto;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.contacto nav .backToTop {
-  font-size: 12vh;
+.contacto .contactoContainer .backToTop {
+  font-size: 15vh;
+  color: #141D98;
+  text-decoration: none;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  text-decoration: none;
-  color: #141D98;
 }
-.contacto nav .backToTop:hover {
+.contacto .contactoContainer .backToTop:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto nav .backToTop:not(:hover) {
+.contacto .contactoContainer .backToTop:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto nav .whatsappLogo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.contacto .contactoContainer .whatsapp {
+  font-size: 4vh;
   color: #141D98;
-}
-.contacto nav .whatsappLogo img {
-  height: 10vh;
-}
-.contacto nav .whatsapp {
+  text-decoration: none;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  text-decoration: none;
-  color: #141D98;
-  font-size: 4vh;
 }
-.contacto nav .whatsapp:hover {
+.contacto .contactoContainer .whatsapp:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto nav .whatsapp:not(:hover) {
+.contacto .contactoContainer .whatsapp:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto nav .instagramLogo {
+.contacto .contactoContainer .whatsappLogo {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  color: #141D98;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: start;
 }
-.contacto nav .instagramLogo img {
+.contacto .contactoContainer .whatsappLogo img {
   height: 10vh;
 }
-.contacto nav .instagram {
+.contacto .contactoContainer .instagram {
+  font-size: 4vh;
+  color: #141D98;
+  text-decoration: none;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  text-decoration: none;
-  color: #141D98;
-  font-size: 4vh;
 }
-.contacto nav .instagram:hover {
+.contacto .contactoContainer .instagram:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto nav .instagram:not(:hover) {
+.contacto .contactoContainer .instagram:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto nav div a {
-  color: #141D98;
-  text-decoration: none;
+.contacto .contactoContainer .instagramLogo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
 }
-.contacto nav div a img {
-  height: 12vh;
+.contacto .contactoContainer .instagramLogo img {
+  height: 10vh;
 }
-.contacto nav div a h2 {
-  font-size: 4vh;
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .contacto .contacto {
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto .contacto .backToTop {
+    font-size: 10vh;
+  }
+  .contacto .contacto .instagram, .contacto .contacto .whatsapp {
+    font-size: 3vh;
+  }
 }
-.contacto nav div a:hover {
-  color: #BF9C80;
-  transition: all 2s;
-}
-.contacto nav div a:not(:hover) {
-  color: #141D98;
-  transition: all 2s;
+@media screen and (max-width: 480px) {
+  .contacto .contacto {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contacto .contacto .contactoContainer {
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto .contacto .contactoContainer .backToTop {
+    font-size: 10vh;
+  }
+  .contacto .contacto .contactoContainer .instagram, .contacto .contacto .contactoContainer .whatsapp {
+    font-size: 3vh;
+  }
 }
 
-/*sección contacto en todas las páginas*/
+/* Contacto */
 /*reproductor de música en todas las páginas*/
 .musica input {
   height: 20vh;
@@ -1893,17 +1914,13 @@ html {
 }
 
 /*reproductor de música en todas las páginas*/
+/* Promociones en shop.html */
 .shopPromociones {
   font-family: myriad-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #141D98;
   font-size: 3vh;
-}
-.shopPromociones p {
-  min-width: 27vw;
-  max-width: 27vw;
-  text-align: justify;
 }
 .shopPromociones .shopPromoUno {
   height: 50vh;
@@ -1915,14 +1932,11 @@ html {
   justify-content: center;
   align-items: center;
 }
-.shopPromociones .shopPromoUno a {
-  margin: 2vw;
-}
-.shopPromociones .shopPromoUno .shopPromoUno:hover {
+.shopPromociones .shopPromoUno:hover {
   width: 70vw;
   transition: all 2s;
 }
-.shopPromociones .shopPromoUno .shopPromoUno:not(:hover) {
+.shopPromociones .shopPromoUno:not(:hover) {
   width: 30vw;
   transition: all 2s;
 }
@@ -1936,16 +1950,18 @@ html {
   justify-content: center;
   align-items: center;
 }
-.shopPromociones .shopPromoDos a {
-  margin: 2vw;
-}
-.shopPromociones .shopPromoDos .shopPromoDos:hover {
+.shopPromociones .shopPromoDos:hover {
   width: 70vw;
   transition: all 2s;
 }
-.shopPromociones .shopPromoDos .shopPromoDos:not(:hover) {
+.shopPromociones .shopPromoDos:not(:hover) {
   width: 30vw;
   transition: all 2s;
+}
+.shopPromociones .shopPromoDos p {
+  min-width: 27vw;
+  max-width: 27vw;
+  text-align: justify;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .shopPromociones .shopPromociones {
@@ -1955,11 +1971,11 @@ html {
     height: 70vh;
     width: 50vw;
   }
-  .shopPromociones .shopPromociones .shopPromoUno .shopPromoUno:hover {
+  .shopPromociones .shopPromociones .shopPromoUno:hover {
     width: 70vw;
     transition: all 2s;
   }
-  .shopPromociones .shopPromociones .shopPromoUno .shopPromoUno:not(:hover) {
+  .shopPromociones .shopPromociones .shopPromoUno:not(:hover) {
     width: 30vw;
     transition: all 2s;
   }
@@ -1967,11 +1983,11 @@ html {
     height: 70vh;
     width: 50vw;
   }
-  .shopPromociones .shopPromociones .shopPromoDos .shopPromoDos:hover {
+  .shopPromociones .shopPromociones .shopPromoDos:hover {
     width: 70vw;
     transition: all 2s;
   }
-  .shopPromociones .shopPromociones .shopPromoDos .shopPromoDos:not(:hover) {
+  .shopPromociones .shopPromociones .shopPromoDos:not(:hover) {
     width: 30vw;
     transition: all 2s;
   }
@@ -2012,57 +2028,77 @@ html {
   }
 }
 
+/* Promociones en shop.html */
 /* Galería en shop.html */
 .shopGaleria {
   background-color: #FCB580;
   color: #141D98;
 }
 .shopGaleria h2 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 20vh;
   white-space: nowrap;
-  margin-left: 5%;
+  margin-left: 2vw;
 }
 .shopGaleria h3 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18vh;
   white-space: nowrap;
-  margin-left: 5%;
+  margin-left: 2vw;
 }
 .shopGaleria p {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 4vh;
   min-width: 15vw;
   max-width: 15vw;
   text-align: center;
 }
+.shopGaleria .categoriaContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.shopGaleria .categoriaContainer .categoriaItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+}
+.shopGaleria .categoriaContainer img {
+  height: 45vh;
+}
+.shopGaleria .categoriaContainer img:hover {
+  transform: rotate(180deg);
+  transition: all 4s;
+}
+.shopGaleria .categoriaContainer img:not(:hover) {
+  transform: rotate(0deg);
+  transition: all 4s;
+}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .shopGaleria p {
+  .shopGaleria .categoriaContainer p {
     font-size: 3vh;
-    min-width: 15vw;
-    max-width: 15vw;
+    min-width: 70vw;
+    max-width: 70vw;
   }
 }
 @media screen and (max-width: 480px) {
+  .shopGaleria .categoriaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .shopGaleria p {
     font-size: 2vh;
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 70vw;
+    max-width: 70vw;
   }
 }
 
 /* Galería en shop.html */
 /* Mayoristas en shop.html */
 .shopMayoristas {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   background-color: #12B5E3;
   color: #141D98;
   font-size: 3vh;
@@ -2095,23 +2131,14 @@ html {
   color: #141D98;
 }
 .blogBlog h2 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 20vh;
   margin-left: 2vw;
 }
 .blogBlog h3 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18vh;
   margin-left: 2vw;
 }
 .blogBlog p {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 3vh;
   margin-left: 2vw;
 }
@@ -2124,28 +2151,20 @@ html {
 
 /* Blog en blog.html */
 /* Similares en producto1.html */
-.productosSimilares {
-  background-color: #12B5E3;
+.productoSimilares {
+  background-color: #FCB580;
   color: #141D98;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
-.productosSimilares h4 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.productosSimilares p {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.productoSimilares p {
   min-width: 15vw;
   max-width: 15vw;
   text-align: center;
   font-size: 2vh;
 }
-.productosSimilares .similaresTitulo {
+.productoSimilares .similaresTitulo {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -2154,13 +2173,13 @@ html {
   align-self: center;
   justify-self: center;
 }
-.productosSimilares .similaresItemUno {
+.productoSimilares .similaresItemUno {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.productosSimilares .similaresItemDos {
+.productoSimilares .similaresItemDos {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -2175,27 +2194,17 @@ html {
 }
 .productoProducto img {
   height: 100vh;
-  padding-left: 10%;
 }
 .productoProducto h2 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 5vh;
   padding-left: 2%;
   max-width: 45vw;
 }
 .productoProducto h3 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 4vh;
   padding-left: 2%;
 }
 .productoProducto p {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 3vh;
   min-width: 45vw;
   max-width: 45vw;
@@ -2212,29 +2221,19 @@ html {
 .articuloArticulo a {
   margin: 2vw;
 }
-.articuloArticulo .articuloNav {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 .articuloArticulo .articuloBody h2 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 20vh;
   margin-left: 2vw;
+  white-space: nowrap;
+}
+.articuloArticulo .articuloBody h2:hover {
+  transform: translateX(100px);
 }
 .articuloArticulo .articuloBody h3 {
-  font-family: piepie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18vh;
   margin-left: 2vw;
 }
-.articuloArticulo .articuloBody p {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.articuloArticulo p {
   font-size: 3vh;
   margin-left: 2vw;
   min-width: 80vw;
