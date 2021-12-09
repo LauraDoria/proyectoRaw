@@ -2,48 +2,48 @@
 .productoProducto {
     color: #141D98;
     background-color: #FCB580;
-}
 
-.productoImagen img {
-    height: 65vh;
-}
+    img {
+        height: 65vh;
 
-.productoImagen img:hover {
-    transform: translateY(-5%); 
-    transition: all 1s;
-}
+        &:hover {
+            transform: translateY(-5%); 
+            transition: all 1s;
+        }
 
-.productoImagen img:not(:hover) {
-    transform: translateY(5%); 
-    transition: all 1s;
-}
+        &:not(:hover) {
+            transform: translateY(5%); 
+            transition: all 1s;
+        }
+    }
 
-.productoProducto h2 {
-    font-family: piepie, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4.5vh;
-    white-space: nowrap;
-    max-width: 45vw;
-    padding-top: 1%;
-}
+    h2 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4.5vh;
+        white-space: nowrap;
+        max-width: 45vw;
+        padding-top: 1%;
+    }
 
-.productoProducto h3 {
-    font-family: piepie, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4vh;
-    white-space: nowrap;
-}
+    h3 {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4vh;
+        white-space: nowrap;
+    }
 
-.productoProducto p {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5vh;
-    min-width: 60vw;
-    max-width: 60vw;
-    text-align: justify;
-    padding-right: 15%;
+    p {
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5vh;
+        min-width: 60vw;
+        max-width: 60vw;
+        text-align: justify;
+        padding-right: 15%;
+    }
 }
 /* Producto en producto1.html */

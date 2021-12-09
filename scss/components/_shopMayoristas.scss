@@ -3,7 +3,7 @@
     @extend %fuenteParrafos;
     background-color: $colorCuatro;
     color: $colorUno;
-    font-size: $sizeSeis;
+    font-size: 3vh;
 
     p {
         min-width: $parrafoCuatro;
@@ -20,13 +20,15 @@
         p {
             min-width: $parrafoDos;
             max-width: $parrafoDos;
+            font-size: 2vh;
         }
     }
     
     @media  screen and (max-width: 480px) {
         p {
             min-width: $parrafoDos;
-            max-width: $parrafoDos; 
+            max-width: $parrafoDos;
+            font-size: 2vh;
         }
     }
 }

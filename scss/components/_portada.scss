@@ -1,24 +1,36 @@
 /* Portada */
 .portada { 
     background-color: #EDCCFF;
-}
 
-.portada  a {
-    font-family: piepie, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #141D98;
-    font-size: 20vh;
-    text-decoration: none;
-}
+    a {
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #141D98;
+        font-size: 20vh;
+        text-decoration: none;
 
-.portada a:hover {
-    color: #BF9C80;
-    transition: all 2s;
-}
+        &:hover {
+            color: #BF9C80;
+            transition: all 2s;
+        }
 
-.portada a:not(:hover) {
-    color: #141D98;
-    transition: all 2s;
+        &:not(:hover) {
+            color: #141D98;
+            transition: all 2s;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        a {
+            font-size: 15vh;
+        }
+    }
+    
+    @media  screen and (max-width: 480px) {
+        a {
+            font-size: 12vh;
+        }
+    }
 }
 /* Portada */
