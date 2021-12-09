@@ -1,36 +1,113 @@
-.indexShop {
-    @extend %flexRowUno;
-    height: $alturaUno;
-    width: $anchoDos;
-    color: $colorUno;
+/* Shop en index.html */
+.indexProductos {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #12B5E3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexMayoristas {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #EDCCFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.indexMayoristas p {
+    min-width: 25vw;
+    max-width: 25vw;
+    font-size: 3vh;
+    color: #141D98;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .indexProductos {
+        flex-grow: 1;
+        height: 95vh;
+        width: 50%;
+    }
 
     .indexMayoristas {
-        height: $alturaUno;
-        width: $anchoCuatroPorcentaje;
         flex-grow: 1;
-        background-color: $colorDos;
-        @extend %flexColDos;
-        @extend %hoverSeccionesDesktop;
-
-        .botonLink {
-            @extend %botonesUno;
-        }
-        p {
-            @extend %parrafoSubseccionDesktop;
-            @extend %fuenteParrafos;
-        }
+        height: 95vh;
+        width: 50%;
     }
 
-    .indexProductos {
-        height: $alturaUno;
-        width: $anchoCuatroPorcentaje;
-        flex-grow: 1;
-        background-color: $colorCuatro;
-        @extend %flexRowDos;
-        @extend %hoverSeccionesDesktop;
+    .indexProductos:hover {
+        width: 70%;
+        transition: all 2s;
+    }
 
-        .botonLink {
-            @extend %botonesUno;
-        }
+    .indexProductos:not(:hover) {
+        width: 30%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas {
+        width: 70%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas:not(:hover) {
+        width: 30%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas p {
+        min-width: 25vw;
+        max-width: 25vw;
+        font-size: 3vh;
     }
 }
+
+@media  screen and (max-width: 480px) {
+    .indexProductos {
+        flex-grow: 1;
+        height: 47.5vh;
+        width: 100%;
+    }
+
+    .indexMayoristas {
+        flex-grow: 1;
+        height: 47.5vh;
+        width: 100%;
+    }
+
+    .indexProductos:hover {
+        height: 70%;
+        transition: all 2s;
+    }
+
+    .indexProductos:not(:hover) {
+        height: 30%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas:hover {
+        height: 70%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas:not(:hover) {
+        height: 30%;
+        transition: all 2s;
+    }
+
+    .indexMayoristas p {
+        min-width: 60vw;
+        max-width: 60vw;
+        font-size: 2vh;
+    }
+}
+/* Shop en index.html */

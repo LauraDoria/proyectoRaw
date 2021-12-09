@@ -20,7 +20,13 @@
             white-space: nowrap;
 
             &:hover {
-                transform: translateX(100px);
+                transform: translateX(-2000px);
+                transition: all 8s;
+            }
+
+            &:not(:hover) {
+                transform: translateX(0);
+                transition: all 8s;
             }
         }
 
@@ -28,6 +34,17 @@
             @extend %fuenteTitulos;
             font-size: $sizeSiete;
             margin-left: 2vw;
+            white-space: nowrap;
+
+            &:hover {
+                transform: translateX(-2000px);
+                transition: all 8s;
+            }
+
+            &:not(:hover) {
+                transform: translateX(0);
+                transition: all 8s;
+            }
         }
 
     }

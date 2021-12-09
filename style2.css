@@ -1121,8 +1121,8 @@ html {
         width: 100vw;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1729,8 +1729,8 @@ html {
 }
 
 .indexConocenos p {
-    min-width: 80%;
-    max-width: 80%;
+    min-width: 70%;
+    max-width: 70%;
     font-size: 3vh;
     color: #141D98;
 }
@@ -2439,11 +2439,25 @@ html {
     grid-template-rows: auto auto;
 }
 
+.productoSimilares img {
+    height: 30vh;
+}
+
+.productoSimilares img:hover {
+    transform: rotate(180deg);
+    transition: all 4s;
+}
+
+.productoSimilares img:not(:hover) {
+    transform: rotate(0deg);
+    transition: all 4s;
+}
+
 .productoSimilares p {
-    min-width: 15vw;
-    max-width: 15vw;
+    min-width: 20vw;
+    max-width: 20vw;
     text-align: center;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 .similaresTitulo {
@@ -2476,17 +2490,27 @@ html {
 }
 
 .productoImagen img {
-    height: 100vh;
-    padding-left: 10%;
+    height: 65vh;
+}
+
+.productoImagen img:hover {
+    transform: translateY(-5%); 
+    transition: all 1s;
+}
+
+.productoImagen img:not(:hover) {
+    transform: translateY(5%); 
+    transition: all 1s;
 }
 
 .productoProducto h2 {
     font-family: piepie, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 5vh;
-    padding-left: 2%;
+    font-size: 4.5vh;
+    white-space: nowrap;
     max-width: 45vw;
+    padding-top: 1%;
 }
 
 .productoProducto h3 {
@@ -2494,18 +2518,18 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 4vh;
-    padding-left: 2%;
+    white-space: nowrap;
 }
 
 .productoProducto p {
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3vh;
-    min-width: 45vw;
-    max-width: 45vw;
+    font-size: 2.5vh;
+    min-width: 60vw;
+    max-width: 60vw;
     text-align: justify;
-    padding-left: 2%;
+    padding-right: 15%;
 }
 /* Producto en producto1.html */
 

@@ -1,29 +1,42 @@
-/*sección Conocenos en index.html*/
-
+/* Conocenos en index.html */
 .indexConocenos {
-    @include sectionSizes($alturaUno, $anchoDos);
-    background-color: $colorCinco;
-    @extend %flexColTres;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCB580;
+    text-align: justify;
+}
 
-    p {
-        color: nth($colores, 1);;
-        min-width: $parrafoTres;
-        max-width: $parrafoTres;
-        text-align: $parrafoJustify;
-        font-size: $sizeSeis;
-        @extend %fuenteParrafos;
-    }
+.indexConocenos p {
+    min-width: 70%;
+    max-width: 70%;
+    font-size: 3vh;
+    color: #141D98;
+}
 
-    @media screen and (min-width: 481px) and (max-width: 1024px) {
-        min-width: $parrafoUno;
-        max-width: $parrafoUno;
-        font-size: $sizeSeisMobile; 
-    }
-    
-    @media screen and (max-width: 480px) {
-        min-width: $parrafoUno;
-        max-width: $parrafoUno;
-        font-size: $sizeSeisMobile; 
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .indexConocenos p {
+        font-size: 2vh;
+        max-width: 90%;
+        min-width: 90%;
     }
 }
-/*sección Conocenos en index.html*/
+
+@media  screen and (max-width: 480px) {
+    .indexConocenos p {
+        font-size: 2vh;
+        max-width: 90%;
+        min-width: 90%;
+    }    
+
+    .menuContainerMobile a:hover {
+        color: #BF9C80;
+        transition: all 2s;
+    }
+    
+    .menuContainerMobile a:not(:hover) {
+        color: #EDCCFF;
+        transition: all 2s;
+    }
+}
+/* Conocenos en index.html */

@@ -1,33 +1,49 @@
 /* Producto en producto1.html */
 .productoProducto {
-    color: $colorUno;
-    background-color: $colorCinco;
-    @extend %flexRowUno;
+    color: #141D98;
+    background-color: #FCB580;
+}
 
-    img {
-        height: $alturaUno;
-    }
+.productoImagen img {
+    height: 65vh;
+}
 
-    h2 {
-        @extend %fuenteTitulos;
-        font-size: $sizeOcho;
-        padding-left: 2%;
-        max-width: $parrafoNueve;
-    }
+.productoImagen img:hover {
+    transform: translateY(-5%); 
+    transition: all 1s;
+}
 
-    h3 {
-        @extend %fuenteTitulos;
-        font-size: $sizeCinco;
-        padding-left: 2%;
-    }
+.productoImagen img:not(:hover) {
+    transform: translateY(5%); 
+    transition: all 1s;
+}
 
-    p {
-        @extend %fuenteParrafos;
-        font-size: $sizeSeis;
-        min-width: $parrafoNueve;
-        max-width: $parrafoNueve;
-        text-align: $parrafoJustify;
-        padding-left: 2%;
-    }
+.productoProducto h2 {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5vh;
+    white-space: nowrap;
+    max-width: 45vw;
+    padding-top: 1%;
+}
+
+.productoProducto h3 {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    white-space: nowrap;
+}
+
+.productoProducto p {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    min-width: 60vw;
+    max-width: 60vw;
+    text-align: justify;
+    padding-right: 15%;
 }
 /* Producto en producto1.html */

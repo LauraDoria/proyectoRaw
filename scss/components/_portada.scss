@@ -1,21 +1,24 @@
-/*sección portada en todas las páginas*/
-.portada {
-    background-color: nth($colores, 2);
-    @extend %flexRowDos;
-    h1 {
-        font-size: $sizeUno;
-        a {
-            @extend %fuenteEnlaces;
-            @extend %linkBlue;
-        }
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 1024px) {
-        font-size: $sizeUnoMobile;
-    }
-    
-    @media screen and (max-width: 480px) {
-        font-size: $sizeTresMobile;
-    }
+/* Portada */
+.portada { 
+    background-color: #EDCCFF;
 }
-/*sección portada en todas las páginas*/
+
+.portada  a {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #141D98;
+    font-size: 20vh;
+    text-decoration: none;
+}
+
+.portada a:hover {
+    color: #BF9C80;
+    transition: all 2s;
+}
+
+.portada a:not(:hover) {
+    color: #141D98;
+    transition: all 2s;
+}
+/* Portada */

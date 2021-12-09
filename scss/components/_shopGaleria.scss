@@ -8,6 +8,16 @@
         font-size: $sizeUno;
         white-space: nowrap;
         margin-left: 2vw;
+
+        &:hover {
+            transform: translateX(-8000px);
+            transition: all 60s;
+        }
+
+        &:not(:hover) {
+            transform: translateX(0);
+            transition: all 60s;
+        }
     }
 
     h3 {
@@ -15,13 +25,23 @@
         font-size: $sizeSiete;
         white-space: nowrap;
         margin-left: 2vw;
+
+        &:hover {
+            transform: translateX(-8000px);
+            transition: all 60s;
+        }
+
+        &:not(:hover) {
+            transform: translateX(0);
+            transition: all 60s;
+        }
     }
 
     p {
         @extend %fuenteParrafos;
         font-size: $sizeCinco;
-        min-width: 15vw;
-        max-width: 15vw;
+        min-width: 20vw;
+        max-width: 20vw;
         text-align: center;
     }
 
@@ -37,7 +57,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 1vw;
+            margin: 2vw;
         }
     
         img {
@@ -62,6 +82,10 @@
                 min-width: $parrafoTres;
                 max-width: $parrafoTres;
             } 
+
+            img {
+                height: 35vh;
+            }
         }
     }
 
@@ -77,7 +101,11 @@
             font-size: $sizeSeisMobile;
             min-width: $parrafoTres;
             max-width: $parrafoTres;
-        } 
+        }
+
+        img {
+            height: 10vh;
+        }
     }
 }
 /* Galería en shop.html */

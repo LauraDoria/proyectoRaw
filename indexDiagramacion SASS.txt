@@ -1,0 +1,450 @@
+.indexContainer {
+    overflow-x: hidden;
+    width: $anchoUno;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+
+    .indexPortada {
+        overflow-x: hidden;
+        height: $alturaUno;
+        width: $anchoUno;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        @extend %flexRowUno;
+    }
+
+    .indexMenu {
+        width: $anchoSiete;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        @extend %flexRowUno;
+        @extend %hoverMenu;
+    }
+
+    .indexConocenos {
+        overflow-x: hidden;
+        height: $alturaUno;
+        width: $anchoDos;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        @extend %flexColUno;
+    }
+
+    .indexShop {
+        overflow-x: hidden;
+        height: $alturaUno;
+        width: $anchoDos;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        @extend %flexRowUno;
+        flex-wrap: nowrap;
+
+        .indexProductos {
+            flex-grow: 1;
+            height: $alturaUno;
+            width: $anchoCuatro;
+            @extend %hoverSeccionesDesktop;
+        }
+        
+        .indexMayoristas {
+            flex-grow: 1;
+            height: $alturaUno;
+            width: $anchoCuatro;
+            @extend %hoverSeccionesDesktop;
+        }
+    }
+
+    .indexBlog {
+        overflow-x: hidden;
+        height: $alturaUno;
+        width: $anchoDos;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        @extend %flexRowUno;
+        flex-wrap: nowrap;
+
+        .indexBlogBody {
+            flex-grow: 1;
+            height: $alturaUno;
+            width: $anchoCuatro;
+            @extend %hoverSeccionesDesktop;
+        }
+        
+        .indexSlider {
+            flex-grow: 1;
+            height: $alturaUno;
+            width: $anchoCuatro;
+            @extend %hoverSeccionesDesktop;
+        }
+    }
+
+    .indexContacto {
+        overflow-x: hidden;
+        height: $alturaUno;
+        width: $anchoUno;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        .indexContainer {
+            overflow-x: hidden;
+            width: $anchoUno;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+
+            .indexPortada {
+                overflow-x: hidden;
+                height: $alturaUno;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .indexMenu {
+                overflow: hidden;
+                height: $alturaSeis;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .indexMenu:hover {
+                    height: $alturaCinco;
+                    transition: all 2s;
+                }
+            
+                .indexMenu:not(:hover) {
+                    height: $alturaSeis;
+                    transition: all 2s;
+                }
+            }
+
+            .indexConocenos {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .indexShop {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .indexProductos {
+                    flex-grow: 1;
+                    height: $alturaDos;
+                    width: $anchoCuatro;
+
+                    &:hover {
+                        width: $anchoTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        width: $anchoSeis;
+                        transition: all 2s;
+                    }
+                }
+            
+                .indexMayoristas {
+                    flex-grow: 1;
+                    height: $alturaDos;
+                    width: $anchoCuatro;
+
+                    &:hover {
+                        width: $anchoTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        width: $anchoSeis;
+                        transition: all 2s;
+                    }
+                }
+            }
+
+            .indexBlog {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .indexBlogBody {
+                    flex-grow: 1;
+                    height: $alturaDos;
+                    width: $anchoCuatro;
+
+                    &:hover {
+                        width: $anchoTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        width: $anchoSeis;
+                        transition: all 2s;
+                    }
+                }
+            
+                .indexSlider {
+                    flex-grow: 1;
+                    height: $alturaDos;
+                    width: $anchoCuatro;
+
+                    &:hover {
+                        width: $anchoTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        width: $anchoSeis;
+                        transition: all 2s;
+                    }
+                }
+            }
+        
+            .indexContacto {
+                overflow-x: hidden;
+                height: $alturaUno;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 6;
+                grid-row-end: 7;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    /*mobile*/
+    @media screen and (max-width: 480px) {
+        .indexContainer {
+            overflow-x: hidden;
+            width: $anchoUno;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+
+            .indexPortada {
+                overflow-x: hidden;
+                height: $alturaUno;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+        
+            .indexMenu {
+                overflow: hidden;
+                height: $alturaSeis;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                :hover {
+                    height: $alturaCinco;
+                    transition: all 2s;
+                }
+            
+                :not(:hover) {
+                    height: $alturaSeis;
+                    transition: all 2s;
+                }
+            }
+
+            .indexConocenos {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .indexShop {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .indexProductos {
+                    flex-grow: 1;
+                    height: $alturaCuatro;
+                    width: $anchoUno;
+
+                    &:hover {
+                        height: $alturaTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        height: $alturaSeis;
+                        transition: all 2s;
+                    }
+                }
+            
+                .indexMayoristas {
+                    flex-grow: 1;
+                    height: $alturaCuatro;
+                    width: $anchoUno;
+
+                    &:hover {
+                        height: $alturaTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        height: $alturaSeis;
+                        transition: all 2s;
+                    }
+                }
+            }
+        
+            .indexBlog {
+                overflow-x: hidden;
+                height: $alturaDos;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+            
+                .indexBlogBody {
+                    flex-grow: 1;
+                    height: $alturaCuatro;
+                    width: $anchoUno;
+
+                    &:hover {
+                        height: $alturaTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        height: $alturaSeis;
+                        transition: all 2s;
+                    }
+                }
+            
+                .indexSlider {
+                    flex-grow: 1;
+                    height: $alturaCuatro;
+                    width: $anchoUno;
+
+                    &:hover {
+                        height: $alturaTres;
+                        transition: all 2s;
+                    }
+                    
+                    &:not(:hover) {
+                        height: $alturaSeis;
+                        transition: all 2s;
+                    }
+                }
+            }
+
+            .indexContacto {
+                overflow-x: hidden;
+                height: $alturaUno;
+                width: $anchoUno;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 6;
+                grid-row-end: 7;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }   
+    }
+}

@@ -102,43 +102,43 @@ html {
 /*Border radius*/
 /*Border radius*/
 /*Botones*/
-.shopMayoristas a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink {
+.shopMayoristas a, .shopPromociones .shopPromoDos .botonLink {
   background-color: #141D98;
   color: #EDCCFF;
   font-size: 4vh;
   padding: 2vh;
-  margin: 5vh;
+  margin: 2vh;
   border-radius: 4vh;
   text-decoration: none;
   white-space: nowrap;
 }
-.shopMayoristas a:hover, .indexShop .indexProductos .botonLink:hover, .indexShop .indexMayoristas .botonLink:hover {
+.shopMayoristas a:hover, .shopPromociones .shopPromoDos .botonLink:hover {
   background-color: #FCB580;
   color: #141D98;
   transition: all 2s;
 }
-.shopMayoristas a:not(:hover), .indexShop .indexProductos .botonLink:not(:hover), .indexShop .indexMayoristas .botonLink:not(:hover) {
+.shopMayoristas a:not(:hover), .shopPromociones .shopPromoDos .botonLink:not(:hover) {
   background-color: #141D98;
   color: #EDCCFF;
   transition: all 2s;
 }
 
-.articuloArticulo a, .blogBlog a, .indexBlog .indexBlogBody .botonLink {
+.articuloArticulo a, .blogBlog a, .shopPromociones .shopPromoUno .botonLink {
   background-color: #141D98;
   color: #EDCCFF;
   font-size: 4vh;
   padding: 2vh;
-  margin: 5vh;
+  margin: 2vh;
   border-radius: 4vh;
   text-decoration: none;
   white-space: nowrap;
 }
-.articuloArticulo a:hover, .blogBlog a:hover, .indexBlog .indexBlogBody .botonLink:hover {
+.articuloArticulo a:hover, .blogBlog a:hover, .shopPromociones .shopPromoUno .botonLink:hover {
   background-color: #12B5E3;
   color: #141D98;
   transition: all 2s;
 }
-.articuloArticulo a:not(:hover), .blogBlog a:not(:hover), .indexBlog .indexBlogBody .botonLink:not(:hover) {
+.articuloArticulo a:not(:hover), .blogBlog a:not(:hover), .shopPromociones .shopPromoUno .botonLink:not(:hover) {
   background-color: #141D98;
   color: #EDCCFF;
   transition: all 2s;
@@ -146,14 +146,14 @@ html {
 
 /*Botones*/
 /*Flexbox*/
-.productoProducto, .indexBlog, .indexShop, .articuloContainer .articuloArticulo .articuloNav, .articuloContainer .articuloMenu, .productoContainer .productoMenu, .shopContainer .shopMenu, .shopContainer .shopPromociones, .shopContainer .shopPortada, .indexContainer .indexBlog, .indexContainer .indexShop, .indexContainer .indexMenu, .indexContainer .indexPortada {
+.articuloContainer .articuloArticulo .articuloNav, .articuloContainer .articuloMenu, .productoContainer .productoMenu, .shopContainer .shopMenu, .shopContainer .shopPromociones, .shopContainer .shopPortada {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.indexShop .indexProductos, .portada, .articuloContainer .articuloPortada, .productoContainer .productoProducto, .productoContainer .productoPortada, .blogContainer .blogMenu, .blogContainer .blogPortada {
+.articuloContainer .articuloPortada, .productoContainer .productoProducto, .productoContainer .productoPortada, .blogContainer .blogMenu, .blogContainer .blogPortada {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -167,34 +167,27 @@ html {
   align-items: center;
 }
 
-.indexBlog .indexSlider, .indexBlog .indexBlogBody, .shopContainer .shopMayoristas, .indexContainer .indexConocenos {
+.shopContainer .shopMayoristas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.indexShop .indexMayoristas, .articuloContainer .articuloArticulo, .blogContainer .blogBlog {
+.articuloContainer .articuloArticulo, .blogContainer .blogBlog {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.indexConocenos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 /*Flexbox*/
 /*Hovers*/
-.indexBlog .indexSlider:hover, .indexBlog .indexBlogBody:hover, .indexShop .indexProductos:hover, .indexShop .indexMayoristas:hover, .shopContainer .shopPromociones .shopPromoDos:hover, .shopContainer .shopPromociones .shopPromoUno:hover {
+.shopContainer .shopPromociones .shopPromoDos:hover, .shopContainer .shopPromociones .shopPromoUno:hover {
   width: 75vw;
   transition: all 2s;
 }
-.indexBlog .indexSlider:not(:hover), .indexBlog .indexBlogBody:not(:hover), .indexShop .indexProductos:not(:hover), .indexShop .indexMayoristas:not(:hover), .shopContainer .shopPromociones .shopPromoDos:not(:hover), .shopContainer .shopPromociones .shopPromoUno:not(:hover) {
+.shopContainer .shopPromociones .shopPromoDos:not(:hover), .shopContainer .shopPromociones .shopPromoUno:not(:hover) {
   width: 25vw;
   transition: all 2s;
 }
@@ -211,447 +204,430 @@ html {
   transition: all 2s;
 }
 
-.portada h1 a {
-  color: #141D98;
-}
-.portada h1 a:hover {
-  color: #BF9C80;
-  transition: all 2s;
-}
-.portada h1 a:not(:hover) {
-  color: #141D98;
-  transition: all 2s;
-}
-
-.articuloContainer .articuloMenu:hover, .productoContainer .productoMenu:hover, .blogContainer .blogMenu:hover, .shopContainer .shopMenu:hover, .indexContainer .indexMenu:hover {
+.articuloContainer .articuloMenu:hover, .productoContainer .productoMenu:hover, .blogContainer .blogMenu:hover, .shopContainer .shopMenu:hover {
   width: 25vw;
   transition: all 2s;
 }
-.articuloContainer .articuloMenu:not(:hover), .productoContainer .productoMenu:not(:hover), .blogContainer .blogMenu:not(:hover), .shopContainer .shopMenu:not(:hover), .indexContainer .indexMenu:not(:hover) {
+.articuloContainer .articuloMenu:not(:hover), .productoContainer .productoMenu:not(:hover), .blogContainer .blogMenu:not(:hover), .shopContainer .shopMenu:not(:hover) {
   width: 5vw;
   transition: all 2s;
 }
 
 /*Hovers*/
 /*Textos*/
-.indexBlog .indexBlogBody p, .indexShop .indexMayoristas p {
-  font-size: 3vh;
-  min-width: 30vw;
-  max-width: 30vw;
-  text-align: justify;
-}
-
 /*Textos*/
 /*Fuentes*/
-.articuloArticulo .articuloBody h3, .articuloArticulo .articuloBody h2, .articuloArticulo .articuloNav, .productoProducto h3, .productoProducto h2, .productoSimilares h4, .blogBlog h3, .blogBlog h2, .shopGaleria h3, .shopGaleria h2, .shopMayoristas a, .indexShop .indexProductos .botonLink, .indexShop .indexMayoristas .botonLink, .articuloArticulo a, .blogBlog a, .indexBlog .indexBlogBody .botonLink {
+.articuloArticulo .articuloBody h3, .articuloArticulo .articuloBody h2, .articuloArticulo .articuloNav, .blogBlog h3, .blogBlog h2, .shopGaleria h3, .shopGaleria h2, .shopMayoristas a, .shopPromociones .shopPromoDos .botonLink, .articuloArticulo a, .blogBlog a, .shopPromociones .shopPromoUno .botonLink {
   font-family: piepie, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.menu .menuContainer a, .portada h1 a {
+.menu .menuContainer a {
   font-family: piepie, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
 }
 
-.articuloArticulo p, .productoProducto p, .productoSimilares p, .blogBlog p, .shopMayoristas, .shopGaleria p, .indexBlog .indexBlogBody p, .indexShop .indexMayoristas p, .indexConocenos p {
+.articuloArticulo p, .blogBlog p, .shopMayoristas, .shopGaleria p {
   font-family: myriad-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 /*Fuentes*/
-.indexContainer {
-  overflow-x: hidden;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  /*mobile*/
-}
-.indexContainer .indexPortada {
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.indexContainer .indexMenu {
-  width: 5vw;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 5;
-}
-.indexContainer .indexConocenos {
-  overflow-x: hidden;
-  height: 100vh;
-  width: 95vw;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.indexContainer .indexShop {
-  overflow-x: hidden;
-  height: 100vh;
-  width: 95vw;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  flex-wrap: nowrap;
-}
-.indexContainer .indexShop .indexProductos {
-  flex-grow: 1;
-  height: 100vh;
-  width: 50vw;
-}
-.indexContainer .indexShop .indexMayoristas {
-  flex-grow: 1;
-  height: 100vh;
-  width: 50vw;
-}
-.indexContainer .indexBlog {
-  overflow-x: hidden;
-  height: 100vh;
-  width: 95vw;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  flex-wrap: nowrap;
-}
-.indexContainer .indexBlog .indexBlogBody {
-  flex-grow: 1;
-  height: 100vh;
-  width: 50vw;
-}
-.indexContainer .indexBlog .indexSlider {
-  flex-grow: 1;
-  height: 100vh;
-  width: 50vw;
-}
-.indexContainer .indexContacto {
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .indexContainer .indexContainer {
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .indexContainer {
     overflow-x: hidden;
-    width: 100vw;
+    overflow-y: scroll;
+    width: 100%;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
   }
-  .indexContainer .indexContainer .indexPortada {
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexMenu {
-    overflow: hidden;
-    height: 5vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexMenu .indexMenu:hover {
-    height: 30vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexMenu .indexMenu:not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexConocenos {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexShop {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos {
-    flex-grow: 1;
-    height: 95vh;
-    width: 50vw;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos:hover {
-    width: 75vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos:not(:hover) {
-    width: 25vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas {
-    flex-grow: 1;
-    height: 95vh;
-    width: 50vw;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas:hover {
-    width: 75vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas:not(:hover) {
-    width: 25vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody {
-    flex-grow: 1;
-    height: 95vh;
-    width: 50vw;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody:hover {
-    width: 75vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody:not(:hover) {
-    width: 25vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider {
-    flex-grow: 1;
-    height: 95vh;
-    width: 50vw;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider:hover {
-    width: 75vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider:not(:hover) {
-    width: 25vw;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexContacto {
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .indexContainer .indexContainer {
-    overflow-x: hidden;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-  .indexContainer .indexContainer .indexPortada {
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexMenu {
-    overflow: hidden;
-    height: 5vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexMenu :hover {
-    height: 30vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexMenu :not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexConocenos {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexShop {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos {
-    flex-grow: 1;
-    height: 50vh;
-    width: 100vw;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos:hover {
-    height: 70vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexProductos:not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas {
-    flex-grow: 1;
-    height: 50vh;
-    width: 100vw;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas:hover {
-    height: 70vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexShop .indexMayoristas:not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog {
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody {
-    flex-grow: 1;
-    height: 50vh;
-    width: 100vw;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody:hover {
-    height: 70vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexBlogBody:not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider {
-    flex-grow: 1;
-    height: 50vh;
-    width: 100vw;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider:hover {
-    height: 70vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexBlog .indexSlider:not(:hover) {
-    height: 5vh;
-    transition: all 2s;
-  }
-  .indexContainer .indexContainer .indexContacto {
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
 
+  .indexPortada {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu {
+    overflow: hidden;
+    width: 5vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu:hover {
+    width: 25vw;
+    transition: all 2s;
+  }
+
+  .indexMenu:not(:hover) {
+    width: 5vw;
+    transition: all 2s;
+  }
+
+  .indexConocenos {
+    height: 100vh;
+    width: 95vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .indexShop {
+    height: 100vh;
+    width: 95vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexProductos {
+    flex-grow: 1;
+    height: 100vh;
+    width: 50%;
+  }
+
+  .indexMayoristas {
+    flex-grow: 1;
+    height: 100vh;
+    width: 50%;
+  }
+
+  .indexProductos:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexProductos:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexBlog {
+    height: 100vh;
+    width: 95vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexBlogBody {
+    flex-grow: 1;
+    height: 100vh;
+    width: 50%;
+  }
+
+  .indexSlider {
+    flex-grow: 1;
+    height: 100vh;
+    width: 50%;
+  }
+
+  .indexContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+/* Desktop */
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .indexContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+
+  .indexPortada {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+
+  .indexMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+
+  .indexConocenos {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .indexShop {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexBlog {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexBlogBody {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexSlider {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+/* Tablet */
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .indexContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+
+  .indexPortada {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu {
+    overflow: hidden;
+    height: 5vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexMenu:hover {
+    height: 25vh;
+    transition: all 2s;
+  }
+
+  .indexMenu:not(:hover) {
+    height: 5vh;
+    transition: all 2s;
+  }
+
+  .indexConocenos {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .indexShop {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexShop p {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .indexBlog {
+    height: 95vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .indexBlog p {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .indexBlogBody {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+
+  .indexSlider {
+    flex-grow: 1;
+    height: 50%;
+    width: 100%;
+  }
+
+  .indexContacto {
+    height: 100vh;
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+/* Mobile */
 .shopContainer {
   overflow-x: hidden;
   width: 100vw;
@@ -838,7 +814,7 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .shopContainer .shopContacto {
@@ -963,7 +939,7 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .shopContainer .shopContacto {
@@ -1579,25 +1555,31 @@ html {
   }
 }
 
-/*sección portada en todas las páginas*/
+/* Portada */
 .portada {
   background-color: #EDCCFF;
 }
-.portada h1 {
+
+.portada a {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #141D98;
   font-size: 20vh;
-}
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .portada {
-    font-size: 15vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  .portada {
-    font-size: 10vh;
-  }
+  text-decoration: none;
 }
 
-/*sección portada en todas las páginas*/
+.portada a:hover {
+  color: #BF9C80;
+  transition: all 2s;
+}
+
+.portada a:not(:hover) {
+  color: #141D98;
+  transition: all 2s;
+}
+
+/* Portada */
 .menu {
   background-color: #141D98;
   list-style: none;
@@ -1696,98 +1678,329 @@ html {
   }
 }
 
-/*sección Conocenos en index.html*/
+/* Conocenos en index.html */
 .indexConocenos {
-  height: 100vh;
-  width: 95vw;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #FCB580;
-}
-.indexConocenos p {
-  color: #141D98;
-  min-width: 70vw;
-  max-width: 70vw;
   text-align: justify;
-  font-size: 3vh;
 }
+
+.indexConocenos p {
+  min-width: 70%;
+  max-width: 70%;
+  font-size: 3vh;
+  color: #141D98;
+}
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .indexConocenos {
-    min-width: 90vw;
-    max-width: 90vw;
+  .indexConocenos p {
     font-size: 2vh;
+    max-width: 90%;
+    min-width: 90%;
   }
 }
 @media screen and (max-width: 480px) {
-  .indexConocenos {
-    min-width: 90vw;
-    max-width: 90vw;
+  .indexConocenos p {
+    font-size: 2vh;
+    max-width: 90%;
+    min-width: 90%;
+  }
+
+  .menuContainerMobile a:hover {
+    color: #BF9C80;
+    transition: all 2s;
+  }
+
+  .menuContainerMobile a:not(:hover) {
+    color: #EDCCFF;
+    transition: all 2s;
+  }
+}
+/* Conocenos en index.html */
+/* Shop en index.html */
+.indexProductos {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #12B5E3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexMayoristas {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #EDCCFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.indexMayoristas p {
+  min-width: 25vw;
+  max-width: 25vw;
+  font-size: 3vh;
+  color: #141D98;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .indexProductos {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexMayoristas {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexProductos:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexProductos:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas p {
+    min-width: 25vw;
+    max-width: 25vw;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .indexProductos {
+    flex-grow: 1;
+    height: 47.5vh;
+    width: 100%;
+  }
+
+  .indexMayoristas {
+    flex-grow: 1;
+    height: 47.5vh;
+    width: 100%;
+  }
+
+  .indexProductos:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+
+  .indexProductos:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+
+  .indexMayoristas p {
+    min-width: 60vw;
+    max-width: 60vw;
     font-size: 2vh;
   }
 }
-
-/*sección Conocenos en index.html*/
-.indexShop {
-  height: 100vh;
-  width: 95vw;
-  color: #141D98;
-}
-.indexShop .indexMayoristas {
-  height: 100vh;
-  width: 50%;
+/* Shop en index.html */
+/* Blog en index.html */
+.indexBlogBody {
+  overflow: hidden;
   flex-grow: 1;
-  background-color: #EDCCFF;
-}
-.indexShop .indexProductos {
-  height: 100vh;
-  width: 50%;
-  flex-grow: 1;
-  background-color: #12B5E3;
-}
-.indexBlog {
-  height: 100vh;
-  width: 95vw;
-  color: #141D98;
-}
-.indexBlog .indexBlogBody {
-  height: 100vh;
-  width: 50vw;
-  flex-grow: 1;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #BF9C80;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }
-.indexBlog .indexSlider {
-  height: 100vh;
-  width: 95vw;
+
+.indexBlogBody p {
+  min-width: 25vw;
+  max-width: 25vw;
+  font-size: 3vh;
+  color: #141D98;
+}
+
+.indexSlider {
+  overflow: hidden;
   flex-grow: 1;
   background-color: #FCB580;
-}
-.indexBlog .indexSlider img {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
+.indexSlider:hover {
+  width: 70%;
+  transition: all 2s;
+}
+
+.indexSlider:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+
+.indexBlogBody:hover {
+  width: 70%;
+  transition: all 2s;
+}
+
+.indexBlogBody:not(:hover) {
+  width: 30%;
+  transition: all 2s;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .indexSlider {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexBlogBody {
+    flex-grow: 1;
+    height: 95vh;
+    width: 50%;
+  }
+
+  .indexSlider:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexSlider:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody:hover {
+    width: 70%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody:not(:hover) {
+    width: 30%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody p {
+    min-width: 25vw;
+    max-width: 25vw;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .indexSlider {
+    flex-grow: 1;
+    height: 47.5vh;
+    width: 100%;
+  }
+
+  .indexSlider {
+    flex-grow: 1;
+    height: 47.5vh;
+    width: 100%;
+  }
+
+  .indexSlider:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+
+  .indexSlider:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody:hover {
+    height: 70%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody:not(:hover) {
+    height: 30%;
+    transition: all 2s;
+  }
+
+  .indexBlogBody p {
+    min-width: 60vw;
+    max-width: 60vw;
+    font-size: 2vh;
+  }
+
+  .indexSlider img {
+    max-height: 100%;
+  }
+}
+/* Blog en index.html */
 /* Contacto */
 .contacto {
   font-family: piepie, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #EDCCFF;
-  background-image: url("/src/images/footer-background.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 85vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
 }
-.contacto .contactoContainer {
-  padding-top: 2%;
-  padding-right: 10%;
-  display: grid;
-  grid-template-columns: 5% 20%;
-  grid-template-rows: auto auto auto;
-  justify-content: space-evenly;
-  align-items: center;
+
+.footerBackground {
+  height: 100vh;
 }
-.contacto .contactoContainer .backToTop {
+
+.contactoContainer {
+  padding-top: 2%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 5vw 20vw;
+  grid-template-rows: auto auto auto auto auto auto;
+  justify-content: space-evenly;
+  align-content: end;
+  white-space: nowrap;
+}
+.contactoContainer h4 {
+  font-size: 3vh;
+  color: #141D98;
+  margin: 5%;
+}
+
+.backToTop {
   font-size: 15vh;
   color: #141D98;
   text-decoration: none;
@@ -1796,15 +2009,18 @@ html {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.contacto .contactoContainer .backToTop:hover {
+
+.backToTop:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto .contactoContainer .backToTop:not(:hover) {
+
+.backToTop:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto .contactoContainer .whatsapp {
+
+.whatsapp {
   font-size: 4vh;
   color: #141D98;
   text-decoration: none;
@@ -1813,25 +2029,30 @@ html {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.contacto .contactoContainer .whatsapp:hover {
+
+.whatsapp:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto .contactoContainer .whatsapp:not(:hover) {
+
+.whatsapp:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto .contactoContainer .whatsappLogo {
+
+.whatsappLogo {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
   justify-self: start;
 }
-.contacto .contactoContainer .whatsappLogo img {
+
+.whatsappLogo img {
   height: 10vh;
 }
-.contacto .contactoContainer .instagram {
+
+.instagram {
   font-size: 4vh;
   color: #141D98;
   text-decoration: none;
@@ -1840,62 +2061,63 @@ html {
   grid-row-start: 3;
   grid-row-end: 4;
 }
-.contacto .contactoContainer .instagram:hover {
+
+.instagram:hover {
   color: #BF9C80;
   transition: all 2s;
 }
-.contacto .contactoContainer .instagram:not(:hover) {
+
+.instagram:not(:hover) {
   color: #141D98;
   transition: all 2s;
 }
-.contacto .contactoContainer .instagramLogo {
+
+.instagramLogo {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
   justify-self: start;
 }
-.contacto .contactoContainer .instagramLogo img {
+
+.instagramLogo img {
   height: 10vh;
 }
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .contacto .contacto {
+  .contacto {
     margin-right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .contacto .contacto .backToTop {
+
+  .backToTop {
     font-size: 10vh;
   }
-  .contacto .contacto .instagram, .contacto .contacto .whatsapp {
+
+  .instagram, .whatsapp {
     font-size: 3vh;
   }
 }
 @media screen and (max-width: 480px) {
-  .contacto .contacto {
-    background-image: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .contacto .contacto .contactoContainer {
+  .contactoContainer {
     margin-right: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .contacto .contacto .contactoContainer .backToTop {
+
+  .backToTop {
     font-size: 10vh;
   }
-  .contacto .contacto .contactoContainer .instagram, .contacto .contacto .contactoContainer .whatsapp {
+
+  .instagram, .whatsapp {
     font-size: 3vh;
   }
 }
-
 /* Contacto */
 /*reproductor de música en todas las páginas*/
 .musica input {
@@ -1920,7 +2142,7 @@ html {
   font-weight: 400;
   font-style: normal;
   color: #141D98;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .shopPromociones .shopPromoUno {
   height: 50vh;
@@ -1939,6 +2161,11 @@ html {
 .shopPromociones .shopPromoUno:not(:hover) {
   width: 30vw;
   transition: all 2s;
+}
+.shopPromociones .shopPromoUno p {
+  min-width: 20vw;
+  max-width: 20vw;
+  text-align: justify;
 }
 .shopPromociones .shopPromoDos {
   height: 50vh;
@@ -1959,8 +2186,8 @@ html {
   transition: all 2s;
 }
 .shopPromociones .shopPromoDos p {
-  min-width: 27vw;
-  max-width: 27vw;
+  min-width: 20vw;
+  max-width: 20vw;
   text-align: justify;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -2039,15 +2266,31 @@ html {
   white-space: nowrap;
   margin-left: 2vw;
 }
+.shopGaleria h2:hover {
+  transform: translateX(-8000px);
+  transition: all 60s;
+}
+.shopGaleria h2:not(:hover) {
+  transform: translateX(0);
+  transition: all 60s;
+}
 .shopGaleria h3 {
   font-size: 18vh;
   white-space: nowrap;
   margin-left: 2vw;
 }
+.shopGaleria h3:hover {
+  transform: translateX(-8000px);
+  transition: all 60s;
+}
+.shopGaleria h3:not(:hover) {
+  transform: translateX(0);
+  transition: all 60s;
+}
 .shopGaleria p {
   font-size: 4vh;
-  min-width: 15vw;
-  max-width: 15vw;
+  min-width: 20vw;
+  max-width: 20vw;
   text-align: center;
 }
 .shopGaleria .categoriaContainer {
@@ -2062,7 +2305,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1vw;
+  margin: 2vw;
 }
 .shopGaleria .categoriaContainer img {
   height: 45vh;
@@ -2081,6 +2324,9 @@ html {
     min-width: 70vw;
     max-width: 70vw;
   }
+  .shopGaleria .categoriaContainer img {
+    height: 35vh;
+  }
 }
 @media screen and (max-width: 480px) {
   .shopGaleria .categoriaContainer {
@@ -2093,6 +2339,9 @@ html {
     font-size: 2vh;
     min-width: 70vw;
     max-width: 70vw;
+  }
+  .shopGaleria img {
+    height: 10vh;
   }
 }
 
@@ -2151,20 +2400,48 @@ html {
 
 /* Blog en blog.html */
 /* Similares en producto1.html */
+.productoSimilares h4 {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.productoSimilares p {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .productoSimilares {
-  background-color: #FCB580;
+  background-color: #12B5E3;
   color: #141D98;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
-.productoSimilares p {
-  min-width: 15vw;
-  max-width: 15vw;
-  text-align: center;
-  font-size: 2vh;
+
+.productoSimilares img {
+  height: 30vh;
 }
-.productoSimilares .similaresTitulo {
+
+.productoSimilares img:hover {
+  transform: rotate(180deg);
+  transition: all 4s;
+}
+
+.productoSimilares img:not(:hover) {
+  transform: rotate(0deg);
+  transition: all 4s;
+}
+
+.productoSimilares p {
+  min-width: 20vw;
+  max-width: 20vw;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+.similaresTitulo {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -2173,13 +2450,15 @@ html {
   align-self: center;
   justify-self: center;
 }
-.productoSimilares .similaresItemUno {
+
+.similaresItemUno {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.productoSimilares .similaresItemDos {
+
+.similaresItemDos {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -2192,24 +2471,48 @@ html {
   color: #141D98;
   background-color: #FCB580;
 }
-.productoProducto img {
-  height: 100vh;
+
+.productoImagen img {
+  height: 65vh;
 }
+
+.productoImagen img:hover {
+  transform: translateY(-5%);
+  transition: all 1s;
+}
+
+.productoImagen img:not(:hover) {
+  transform: translateY(5%);
+  transition: all 1s;
+}
+
 .productoProducto h2 {
-  font-size: 5vh;
-  padding-left: 2%;
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5vh;
+  white-space: nowrap;
   max-width: 45vw;
+  padding-top: 1%;
 }
+
 .productoProducto h3 {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 4vh;
-  padding-left: 2%;
+  white-space: nowrap;
 }
+
 .productoProducto p {
-  font-size: 3vh;
-  min-width: 45vw;
-  max-width: 45vw;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5vh;
+  min-width: 60vw;
+  max-width: 60vw;
   text-align: justify;
-  padding-left: 2%;
+  padding-right: 15%;
 }
 
 /* Producto en producto1.html */
@@ -2227,11 +2530,25 @@ html {
   white-space: nowrap;
 }
 .articuloArticulo .articuloBody h2:hover {
-  transform: translateX(100px);
+  transform: translateX(-2000px);
+  transition: all 8s;
+}
+.articuloArticulo .articuloBody h2:not(:hover) {
+  transform: translateX(0);
+  transition: all 8s;
 }
 .articuloArticulo .articuloBody h3 {
   font-size: 18vh;
   margin-left: 2vw;
+  white-space: nowrap;
+}
+.articuloArticulo .articuloBody h3:hover {
+  transform: translateX(-2000px);
+  transition: all 8s;
+}
+.articuloArticulo .articuloBody h3:not(:hover) {
+  transform: translateX(0);
+  transition: all 8s;
 }
 .articuloArticulo p {
   font-size: 3vh;

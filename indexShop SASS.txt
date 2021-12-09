@@ -1,0 +1,36 @@
+.indexShop {
+    @extend %flexRowUno;
+    height: $alturaUno;
+    width: $anchoDos;
+    color: $colorUno;
+
+    .indexMayoristas {
+        height: $alturaUno;
+        width: $anchoCuatroPorcentaje;
+        flex-grow: 1;
+        background-color: $colorDos;
+        @extend %flexColDos;
+        @extend %hoverSeccionesDesktop;
+
+        .botonLink {
+            @extend %botonesUno;
+        }
+        p {
+            @extend %parrafoSubseccionDesktop;
+            @extend %fuenteParrafos;
+        }
+    }
+
+    .indexProductos {
+        height: $alturaUno;
+        width: $anchoCuatroPorcentaje;
+        flex-grow: 1;
+        background-color: $colorCuatro;
+        @extend %flexRowDos;
+        @extend %hoverSeccionesDesktop;
+
+        .botonLink {
+            @extend %botonesUno;
+        }
+    }
+}

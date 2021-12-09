@@ -1,45 +1,66 @@
 /* Similares en producto1.html */
+.productoSimilares h4 {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.productoSimilares p {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
 .productoSimilares {
-    background-color: $colorCinco;
-    color: $colorUno;
+    background-color: #12B5E3;
+    color: #141D98;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+}
 
-    h4 {
-        @extend %fuenteTitulos;
-    }
+.productoSimilares img {
+    height: 30vh;
+}
 
-    p {
-        @extend %fuenteParrafos;
-        min-width: $parrafoOcho;
-        max-width: $parrafoOcho;
-        text-align: center;
-        font-size: $sizeSeisMobile;
-    }
+.productoSimilares img:hover {
+    transform: rotate(180deg);
+    transition: all 4s;
+}
 
-    .similaresTitulo {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        font-size: $sizeCinco;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .similaresItemUno {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    
-    .similaresItemDos {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+.productoSimilares img:not(:hover) {
+    transform: rotate(0deg);
+    transition: all 4s;
+}
+
+.productoSimilares p {
+    min-width: 20vw;
+    max-width: 20vw;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.similaresTitulo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 4vh;
+    align-self: center;
+    justify-self: center;
+}
+
+.similaresItemUno {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.similaresItemDos {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 /* Similares en producto1.html */
