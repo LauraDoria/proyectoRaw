@@ -1,51 +1,62 @@
 .blogContainer {
     overflow-x: hidden;
-    width: $anchoUno;
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
 
     .blogPortada {
-        overflow-x: hidden;
-        height: $alturaCuatro;
-        width: $anchoUno;
+        height: 50vh;
+        width: 100vw;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        @extend %flexRowDos;
     }
 
     .blogMenu {
         overflow: hidden;
-        width: $anchoSiete;
+        width: 5vw;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        @extend %flexRowDos;
-        @extend %hoverMenu;
+    
+        &:hover {
+            width: 25vw;
+            transition: all 2s;
+        }
+    
+        &:not(:hover) {
+            width: 5vw;
+            transition: all 2s;
+        }
     }
 
     .blogBlog {
-        overflow-x: hidden;
-        width: $anchoDos;
+        width: 95vw;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        @extend %flexColDos;
-
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    
         .blogNav {
-            height: $alturaCinco;
-            @extend %flexRowTres;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
     .blogContacto {
-        overflow-x: hidden;
-        height: $alturaUno;
-        width: $anchoUno;
+        height: 100vh;
+        width: 100vw;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
@@ -56,78 +67,37 @@
     @media screen and (min-width: 481px) and (max-width: 1024px) {
         .blogContainer {
             overflow-x: hidden;
-            width: $anchoUno;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto;
+            width: 100%;
+            display: flex;
 
             .blogPortada {
-                overflow-x: hidden;
-                height: $alturaCinco;
-                width: $anchoUno;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                align-items: center;
+                height: 30vh;
+                width: 100vw;
             }
+        }
 
-            .blogMenu {
-                overflow: hidden;
-                height: $alturaSeis;
-                width: $anchoUno;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                align-items: center;
+        .blogMenu {
+            overflow: hidden;
+            height: 5vh;
+            width: 100vw;
+        }
 
-                &:hover {
-                    height: $alturaCinco;
-                    transition: all 2s;
-                }
-            
-                &:not(:hover) {
-                    height: $alturaSeis;
-                    transition: all 2s;
-                }
+        .blogBlog {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .blogNav {
+                height: 50vh;
             }
+        }
 
-            .blogBlog {
-                overflow-x: hidden;
-                width: $anchoUno;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 3;
-                grid-row-end: 4;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                align-items: center;
-
-                .blogNav {
-                    height: $alturaCinco;
-                }
-            }
-
-            .blogContacto {
-                overflow-x: hidden;
-                height: $alturaUno;
-                width: $anchoUno;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 4;
-                grid-row-end: 5;
-            }
+        .blogContacto {
+            height: 100vh;
+            width: 100vw;
         }
     }
     /* Tablet */
@@ -136,81 +106,51 @@
     @media screen and (max-width: 480px) {
         .blogContainer {
             overflow-x: hidden;
-            width: $anchoUno;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto;
-        }
+            overflow-y: scroll;
+            width: 100%;
+            display: flex;
+
+            .blogPortada {
+                height: 30vh;
+                width: 100vw;
+            }
+
+            .blogMenu {
+                overflow: hidden;
+                height: 5vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .blogBlog {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
     
-        .blogPortada {
-            overflow-x: hidden;
-            height: $alturaCinco;
-            width: $anchoUno;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-        }
-    
-        .blogMenu {
-            overflow: hidden;
-            height: $alturaSeis;
-            width: $anchoUno;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            &:hover {
-                height: $alturaCinco;
-                transition: all 2s;
+                .blogNav {
+                    height: 50vh;
+                }
             }
-        
-            &:not(:hover) {
-                height: $alturaSeis;
-                transition: all 2s;
+
+            .blogContacto {
+                height: 100vh;
+                width: 100vw;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
             }
-        }
-
-        .blogBlog {
-            overflow-x: hidden;
-            width: $anchoUno;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            .blogNav {
-                height: $alturaCinco;
-            }
-        }
-
-        .blogContacto {
-            overflow-x: hidden;
-            height: $alturaUno;
-            width: $anchoUno;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 4;
-            grid-row-end: 5;
         }
     }
     /* Mobile */
 }
+
 
 

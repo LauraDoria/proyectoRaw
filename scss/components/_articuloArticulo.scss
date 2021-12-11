@@ -2,6 +2,11 @@
 .articuloArticulo {
     background-color: $colorCinco;
     color: $colorUno;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 
     a {
         @extend %botonesDos;
@@ -10,6 +15,10 @@
 
     .articuloNav {
         @extend %fuenteTitulos;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .articuloBody {

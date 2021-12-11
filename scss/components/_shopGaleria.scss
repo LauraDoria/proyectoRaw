@@ -45,6 +45,10 @@
         text-align: center;
     }
 
+    .titulosMobile {
+        display: none;
+    }
+
     .categoriaContainer {
         display: flex;
         flex-direction: row;
@@ -76,6 +80,14 @@
     }
 
     @media screen and (min-width: 481px) and (max-width: 1024px) {
+        .titulosDesktop {
+            display: none;
+        }
+
+        .titulosMobile {
+            font-size: 8vh;
+        }
+
         .categoriaContainer {
             p {
                 font-size: $sizeCincoMobile;
@@ -84,12 +96,20 @@
             } 
 
             img {
-                height: 35vh;
+                height: 20vh;
             }
         }
     }
 
     @media  screen and (max-width: 480px) {
+        .titulosDesktop {
+            display: none;
+        }
+
+        .titulosMobile {
+            font-size: 8vh;
+        }
+
         .categoriaContainer {
             display: flex;
             flex-direction: column;
@@ -104,7 +124,7 @@
         }
 
         img {
-            height: 10vh;
+            height: 15vh;
         }
     }
 }

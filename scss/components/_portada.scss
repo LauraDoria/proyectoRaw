@@ -1,6 +1,7 @@
 /* Portada */
 .portada { 
     background-color: #EDCCFF;
+    @extend %flexRowDos;
 
     a {
         font-family: piepie, sans-serif;
