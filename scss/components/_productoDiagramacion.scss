@@ -22,6 +22,7 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
+        
     
         &:hover {
             width: 25vw;
@@ -62,7 +63,7 @@
     }
 
     /* Tablet */
-    @media screen and (min-width: 481px) and (max-width: 1024px) {
+    @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
         .productoContainer {
             overflow-x: hidden;
             width: 100%;
@@ -98,7 +99,7 @@
     /* Tablet */
 
     /* Mobile */
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) and (orientation: portrait) {
         .productoContainer {
             overflow-x: hidden;
             width: 100%;

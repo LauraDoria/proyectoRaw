@@ -3,7 +3,7 @@
     background-color: $colorCinco;
     color: $colorUno;
 
-    h2 {
+    .h2 {
         @extend %fuenteTitulos;
         font-size: $sizeUno;
         white-space: nowrap;
@@ -20,7 +20,7 @@
         }
     }
 
-    h3 {
+    .h3 {
         @extend %fuenteTitulos;
         font-size: $sizeSiete;
         white-space: nowrap;
@@ -45,9 +45,7 @@
         text-align: center;
     }
 
-    .titulosMobile {
-        display: none;
-    }
+
 
     .categoriaContainer {
         display: flex;
@@ -80,36 +78,20 @@
     }
 
     @media screen and (min-width: 481px) and (max-width: 1024px) {
-        .titulosDesktop {
-            display: none;
-        }
-
-        .titulosMobile {
-            font-size: 8vh;
-        }
-
         .categoriaContainer {
             p {
                 font-size: $sizeCincoMobile;
                 min-width: $parrafoTres;
                 max-width: $parrafoTres;
             } 
+        }
 
-            img {
-                height: 20vh;
-            }
+        img {
+            height: 20vh;
         }
     }
 
     @media  screen and (max-width: 480px) {
-        .titulosDesktop {
-            display: none;
-        }
-
-        .titulosMobile {
-            font-size: 8vh;
-        }
-
         .categoriaContainer {
             display: flex;
             flex-direction: column;

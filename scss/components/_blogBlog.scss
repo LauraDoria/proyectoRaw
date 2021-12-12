@@ -6,12 +6,16 @@
     h2 {
         @extend %fuenteTitulos;
         font-size: $sizeUno;
+        max-width: 90%;
+        min-width: 90%;
         margin-left: 2vw;
     }
 
     h3 {
         @extend %fuenteTitulos;
         font-size: $sizeSiete;
+        max-width: 90%;
+        min-width: 90%;
         margin-left: 2vw;
     }
 

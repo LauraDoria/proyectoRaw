@@ -2,70 +2,45 @@
 .articuloArticulo {
     background-color: $colorCinco;
     color: $colorUno;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    a {
-        @extend %botonesDos;
-        margin: 2vw;
-    }
 
     .articuloNav {
-        @extend %fuenteTitulos;
+        background-color: $colorCuatro;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
 
-    .articuloBody {
-        h2 {
-            @extend %fuenteTitulos;
-            font-size: $sizeUno;
-            margin-left: 2vw;
-            white-space: nowrap;
+    h2 {
+        @extend %fuenteTitulos;
+        font-size: $sizeUno;
+        max-width: 90%;
+        min-width: 90%;
+        margin-left: 2vw;
+    }
 
-            &:hover {
-                transform: translateX(-2000px);
-                transition: all 8s;
-            }
-
-            &:not(:hover) {
-                transform: translateX(0);
-                transition: all 8s;
-            }
-        }
-
-        h3 {
-            @extend %fuenteTitulos;
-            font-size: $sizeSiete;
-            margin-left: 2vw;
-            white-space: nowrap;
-
-            &:hover {
-                transform: translateX(-2000px);
-                transition: all 8s;
-            }
-
-            &:not(:hover) {
-                transform: translateX(0);
-                transition: all 8s;
-            }
-        }
-
+    h3 {
+        @extend %fuenteTitulos;
+        font-size: $sizeSiete;
+        max-width: 90%;
+        min-width: 90%;
+        margin-left: 2vw;
     }
 
     p {
         @extend %fuenteParrafos;
         font-size: $sizeSeis;
         margin-left: 2vw;
-        min-width: $parrafoDos;
-        max-width: $parrafoDos;
-        text-align: $parrafoJustify;
+        min-width: 90%;
+        max-width: 90%;
+        text-align: justify;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    a {
+        @extend %botonesUno;
+        margin: 2%;
     }
 }
-
 /* Artículo en articulo1.html */

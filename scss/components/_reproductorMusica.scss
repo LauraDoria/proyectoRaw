@@ -1,7 +1,7 @@
 /*reproductor de música en todas las páginas*/
 .musica {
     input {
-        height: 20vh;
+        height: 15vh;
         width: auto;
         position: fixed;
         right: 0;
@@ -12,6 +12,18 @@
         }
         &:not(:active) {
             z-index: 3;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        input {
+            height: 10vh;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        input {
+            height: 10vh;
         }
     }
 }
