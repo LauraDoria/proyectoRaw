@@ -1,42 +1,212 @@
-/* Blog en blog.html */
 .blogBlog {
-    background-color: $colorCinco;
-    color: $colorUno;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FCB580;
 
-    h2 {
-        @extend %fuenteTitulos;
-        font-size: $sizeUno;
-        max-width: 90%;
-        min-width: 90%;
-        margin-left: 2vw;
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        width: 100vw;
     }
 
-    h3 {
-        @extend %fuenteTitulos;
-        font-size: $sizeSiete;
-        max-width: 90%;
-        min-width: 90%;
-        margin-left: 2vw;
+    @media screen and (max-width:480px) {
+        width: 100vw;
     }
 
-    p {
-        @extend %fuenteParrafos;
-        font-size: $sizeSeis;
-        margin-left: 2vw;
-        min-width: 90%;
-        max-width: 90%;
-        text-align: justify;
-        margin-top: 2%;
-        margin-bottom: 2%;
+    .blogNav {
+        height: 50vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #12B5E3;
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            height: 65vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        @media screen and (max-width:480px) {
+            height: 65vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .button {
+            color: #EDCCFF;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #141D98;
+            font-size: 4vh;
+            padding: 2vh;
+            border-radius: 4vh;
+            white-space: nowrap;
+            text-decoration: none;
+            
+            &:hover {
+                color: #141D98;
+                background-color: #FCB580;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                color: #EDCCFF;
+                background-color: #141D98;
+                transition: all 2s;
+            }
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 3vh;
+                padding: 1vh;
+                border-radius: 3vh;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 2.5vh;
+                padding: 0.75vh;
+                border-radius: 2.5vh;
+            }
+        }
     }
 
     .blogItem {
-        margin-bottom: 2%;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-left: 2%;
 
-    a {
-        @extend %botonesDos;
-        margin: 2%;
+        h2 {
+            color: #141D98;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20vh;
+            min-width: 70%;
+            max-width: 70%;
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 12vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 5vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+        }
+
+        h3 {
+            color: #141D98;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18vh;
+            min-width: 70%;
+            max-width: 70%;
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 9vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 4vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+        }
+
+        p {
+            color: #141D98;
+            font-family: myriad-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3vh;
+            min-width: 70%;
+            max-width: 70%;
+            text-align: justify;
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 2.5vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+
+            @media screen and (max-width:480px) {
+                font-size: 2vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+        }
+
+        .button {
+            color: #EDCCFF;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #141D98;
+            font-size: 4vh;
+            padding: 2vh;
+            border-radius: 4vh;
+            white-space: nowrap;
+            text-decoration: none;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            
+            &:hover {
+                color: #141D98;
+                background-color: #12B5E3;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                color: #EDCCFF;
+                background-color: #141D98;
+                transition: all 2s;
+            }
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 3vh;
+                padding: 1vh;
+                border-radius: 3vh;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 2.5vh;
+                padding: 0.75vh;
+                border-radius: 2.5vh;
+            }
+        }
+
+        hr {
+            border: 5px solid #141D98;
+            opacity: 100%;
+            min-width: 70%;
+            max-width: 70%;
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                min-width: 70%;
+                max-width: 70%;
+            }
+    
+            @media screen and (max-width:480px) {
+                min-width: 90%;
+                max-width: 90%;
+            }
+        }
     }
 }
-/* Blog en blog.html */

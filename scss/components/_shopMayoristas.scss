@@ -1,35 +1,79 @@
-/* Mayoristas en shop.html */
 .shopMayoristas {
-    @extend %fuenteParrafos;
-    background-color: $colorCuatro;
-    color: $colorUno;
-    font-size: 3vh;
+    height: 100vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #12B5E3;
 
-    p {
-        min-width: $parrafoCuatro;
-        max-width: $parrafoCuatro;
-        text-align: $parrafoJustify;
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        height: 95vh;
+        width: 100vw;
     }
 
-    a {
-        @extend %botonesUno;
-        margin: 2vw;
+    @media screen and (max-width:480px) {
+        height: 95vh;
+        width: 100vw;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 1024px) {
-        p {
-            min-width: $parrafoDos;
-            max-width: $parrafoDos;
-            font-size: 2vh;
+    .button {
+        color: #EDCCFF;
+        font-family: piepie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #141D98;
+        font-size: 4vh;
+        padding: 2vh;
+        border-radius: 4vh;
+        white-space: nowrap;
+        text-decoration: none;
+            
+        &:hover {
+            color: #141D98;
+            background-color: #FCB580;
+            transition: all 2s;
+        }
+
+        &:not(:hover) {
+            color: #EDCCFF;
+            background-color: #141D98;
+            transition: all 2s;
+        }
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            font-size: 3vh;
+            padding: 1vh;
+            border-radius: 3vh;
+        }
+    
+        @media screen and (max-width:480px) {
+            font-size: 2.5vh;
+            padding: 0.75vh;
+            border-radius: 2.5vh;
         }
     }
-    
-    @media  screen and (max-width: 480px) {
-        p {
-            min-width: $parrafoDos;
-            max-width: $parrafoDos;
+
+    p {
+        color: #141D98;
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3vh;
+        min-width: 50%;
+        max-width: 50%;
+        text-align: justify;
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            font-size: 2.5vh;
+            min-width: 70%;
+            max-width: 70%;
+        }
+
+        @media screen and (max-width:480px) {
             font-size: 2vh;
+            min-width: 70%;
+            max-width: 70%;
         }
     }
 }
-/* Mayoristas en shop.html */

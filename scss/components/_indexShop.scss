@@ -1,123 +1,189 @@
-/* Shop en index.html */
 .indexShop {
-    p {
-        min-width: 20vw;
-        max-width: 20vw;
-        font-size: 2.5vh;
-        color: #141D98;
-    }
+    height: 100vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
-    .indexProductos {
-        font-family: piepie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        background-color: #12B5E3;
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        height: 95vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-
-        .botonLink {
-            @extend %botonesUno;
-        }
     }
 
+    @media screen and (max-width:480px) {
+        height: 95vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     .indexMayoristas {
-        font-family: myriad-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        flex-grow: 1;
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #EDCCFF;
+
+        @media screen and (min-width:1024px) {
+            &:hover {
+                width: 75%;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                width: 25%;
+                transition: all 2s;
+            }
+        }
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            height: 50vh;
+            width: 100%;
+        }
+
+        @media screen and (max-width:480px) {
+            height: 50vh;
+            width: 100%;
+        }
+
+        .button {
+            color: #EDCCFF;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #141D98;
+            font-size: 4vh;
+            padding: 2vh;
+            border-radius: 4vh;
+            white-space: nowrap;
+            text-decoration: none;
+            
+            &:hover {
+                color: #141D98;
+                background-color: #12B5E3;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                color: #EDCCFF;
+                background-color: #141D98;
+                transition: all 2s;
+            }
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 3vh;
+                padding: 1vh;
+                border-radius: 3vh;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 2.5vh;
+                padding: 0.75vh;
+                border-radius: 2.5vh;
+            }
+        }
+
+        p {
+            color: #141D98;
+            font-family: myriad-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3vh;
+            min-width: 21vw;
+            max-width: 21vw;
+            text-align: justify;
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 2.5vh;
+                min-width: 90vw;
+                max-width: 90vw;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 2vh;
+                min-width: 90%;
+                max-width: 90%;
+            }
+        }
+    }
+
+    .indexProductos {
+        flex-grow: 1;
+        height: 100vh;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        text-align: justify;
+        background-color: #12B5E3;
 
-        .botonLink {
-            @extend %botonesDos;
+        @media screen and (min-width:1024px) {
+            &:hover {
+                width: 75%;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                width: 25%;
+                transition: all 2s;
+            }
+        }
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            height: 50vh;
+            width: 100%;
+        }
+
+        @media screen and (max-width:480px) {
+            height: 50vh;
+            width: 100%;
+        }
+
+        .button {
+            color: #EDCCFF;
+            font-family: piepie, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #141D98;
+            font-size: 4vh;
+            padding: 2vh;
+            border-radius: 4vh;
+            white-space: nowrap;
+            text-decoration: none;
+            
+            &:hover {
+                color: #141D98;
+                background-color: #FCB580;
+                transition: all 2s;
+            }
+
+            &:not(:hover) {
+                color: #EDCCFF;
+                background-color: #141D98;
+                transition: all 2s;
+            }
+
+            @media screen and (min-width:481px) and (max-width:1023px) {
+                font-size: 3vh;
+                padding: 1vh;
+                border-radius: 3vh;
+            }
+    
+            @media screen and (max-width:480px) {
+                font-size: 2.5vh;
+                padding: 0.75vh;
+                border-radius: 2.5vh;
+            }
         }
     }
 }
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .indexProductos {
-        flex-grow: 1;
-        height: 95vh;
-        width: 50%;
-
-        &:hover {
-            width: 70%;
-            transition: all 2s;
-        }
-    
-        &:not(:hover) {
-            width: 30%;
-            transition: all 2s;
-        }
-    }
-
-    .indexMayoristas {
-        flex-grow: 1;
-        height: 95vh;
-        width: 50%;
-
-        &:hover {
-            width: 70%;
-            transition: all 2s;
-        }
-    
-        &:not(:hover) {
-            width: 30%;
-            transition: all 2s;
-        }
-    }
-
-    p {
-        min-width: 25vw;
-        max-width: 25vw;
-        font-size: 2.5vh;
-    }
-}
-
-@media  screen and (max-width: 480px) {
-    .indexProductos {
-        flex-grow: 1;
-        height: 47.5vh;
-        width: 100%;
-
-        &:hover {
-            height: 70%;
-            transition: all 2s;
-        }
-    
-        &:not(:hover) {
-            height: 30%;
-            transition: all 2s;
-        }
-    }
-
-    .indexMayoristas {
-        flex-grow: 1;
-        height: 47.5vh;
-        width: 100%;
-
-        &:hover {
-            height: 70%;
-            transition: all 2s;
-        }
-    
-        &:not(:hover) {
-            height: 30%;
-            transition: all 2s;
-        }
-    }
-
-    p {
-        min-width: 60vw;
-        max-width: 60vw;
-        font-size: 2vh;
-    }
-}
-/* Shop en index.html */

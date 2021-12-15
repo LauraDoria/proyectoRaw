@@ -1,60 +1,115 @@
-/* Similares en producto1.html */
 .productoSimilares {
-    background-color: #12B5E3;
-    color: #141D98;
+    height: 50vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: #12B5E3;
+
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    @media screen and (max-width:480px) {
+        height: 70vh;
+        width: 100vw;
+    }
 
     h4 {
+        color: #141D98;
         font-family: piepie, sans-serif;
         font-weight: 400;
         font-style: normal;
-    }
-
-    p {
-        font-family: myriad-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        min-width: 18vw;
-        max-width: 18vw;
-        text-align: center;
-        font-size: 2.5vh;
-    }
-
-    img {
-        height: 30vh;
-
-        &:hover {
-            transform: rotate(180deg);
-            transition: all 4s;
-        }
-
-        &:not(:hover) {
-            transform: rotate(0deg);
-            transition: all 4s;
-        }
-    }
-
-    .similaresTitulo {
         font-size: 4vh;
+        min-width: 80%;
+        max-width: 80%;
+        margin-left: 22%;
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            font-size: 3.5vh;
+            min-width: 90%;
+            max-width: 90%;
+        }
+
+        @media screen and (max-width:480px) {
+            font-size: 3vh;
+            min-width: 90%;
+            max-width: 90%;
+        }
     }
 
     .similaresImagenes {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-    }
 
-    .similaresItem {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        @media screen and (max-width:480px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .similaresItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 30vh;
+    
+                &:hover {
+                    transform: rotate(180deg);
+                    transition: all 4s;
+                }
+        
+                &:not(:hover) {
+                    transform: rotate(0deg);
+                    transition: all 4s;
+                }
+    
+                @media screen and (min-width:481px) and (max-width:1023px) {
+                    height: 20vh;
+                }
+            
+                @media screen and (max-width:480px) {
+                    height: 20vh;
+                }
+            }
+
+            p {
+                color: #141D98;
+                font-family: myriad-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 3vh;
+                min-width: 80%;
+                max-width: 80%;
+                text-align: center;
+
+                @media screen and (min-width:481px) and (max-width:1023px) {
+                    font-size: 2.5vh;
+                    min-width: 90%;
+                    max-width: 90%;
+                }
+    
+                @media screen and (max-width:480px) {
+                    font-size: 2vh;
+                    min-width: 90%;
+                    max-width: 90%;
+                }
+            }
+        }
     }
 }
-/* Similares en producto1.html */

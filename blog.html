@@ -39,26 +39,17 @@
     </header>
     <!-- Fin de Portada -->
 
-    <!--comienzo del reproductor de música-->
-    <section class="musica" id="musica">
-        <audio preload="auto" autoplay loop> 
-            <source src="/src/audio/audioraw1.mp3">
-            <source src="/src/audio/audioraw1.ogg">
-        </audio>
-        <input type="image" src="/src/images/music-toggle-play-to-pause.svg" class="musicToggle" id="on" />
-        <input type="image" src="/src/images/music-toggle-pause-to-play.svg" class="musicToggle" id="off"/>
-    </section>
-    <!--fin del reproductor de música-->
-
     <!-- Comienzo de Menú -->
-    <nav class="blogMenu menu" id="menu">
-        <ul class="menuContainer">
+    <nav class="blogMenu menuDesktop" id=menu>
+        <ul class="menuContainerDesktop">
             <li id="menuConocenos"><a href="./index.html#indexConocenos">Conocenos</a></li>
             <li id="menuShop"><a href="./shop.html">Shop</a></li>
             <li id="menuBlog"><a href="./blog.html">Blog</a></li>
             <li id="menuContacto"><a href="#contacto">Contacto</a></li>
         </ul>
+    </nav>
 
+    <nav class="menuTabletMobile" id=menuMobile>
         <ul class="menuContainerMobile">
             <li id="menuConocenosMobile"><a href="./index.html#indexConocenos">Conocenos</a></li>
             <li id="menuShopMobile"><a href="./shop.html">Shop</a></li>
@@ -71,8 +62,8 @@
     <!-- Comienzo de Blog -->
     <section class="blogBlog" id="blogBlog">
         <nav class="blogNav">
-            <a href="./blog.html" class="botonesDos">Página anterior</a>
-            <a href="./blog2.html" class="botonesDos">Página siguiente</a>
+            <a href="./blog.html" class="button">Página anterior</a>
+            <a href="./blog2.html" class="button">Página siguiente</a>
         </nav>
         <section class="blogBody">
             <div class="blogItem">
@@ -96,7 +87,7 @@
                     cabello y qué cuidados necesita cada uno? En este artículo
                     te lo contamos.
                 </p>
-                <a href="/articulo1.html" class="botonesDos">Leer más</a>.
+                <a href="/cual-es-mi-tipo-de-cabello.html" class="button">Leer más</a>.
                 <hr>
             </div>
 
@@ -110,7 +101,7 @@
                     con una guía con todo lo básico para que empieces a cuidar tu
                     piel. 
                 </p>
-                <a href="/articulo2.html" class="botonesDos">Leer más</a>
+                <a href="/rutina-skincare-101.html" class="button">Leer más</a>
                 <hr>
             </div>
 
@@ -123,7 +114,7 @@
                     parabenos? qué efectos tienen sobre la salud? Son todos iguales?
                     Lee este artículo y enterate.
                 </p>
-                <a href="/articulo3.html" class="botonesDos">Leer más</a>
+                <a href="/libre-parabenos-sulfatos.html" class="button">Leer más</a>
                 <hr>
             </div>
 
@@ -135,7 +126,7 @@
                     lo que se dice por ahí es cierto. En este artículo
                     derribamos algunos mitos muy difundidos.
                 </p>
-                <a href="/articulo4.html" class="botonesDos">Leer más</a>
+                <a href="/derribando-mitos.html" class="button">Leer más</a>
                 <hr>
             </div>
 
@@ -148,28 +139,28 @@
                     aplicarnos en la piel y cuáles es conveniente evitar para
                     ahorrarnos malos ratos.
                 </p>
-                <a href="/articulo5.html" class="botonesDos">Leer más</a>
+                <a href="/que-significa-comedogenico.html" class="button">Leer más</a>
             </div>
         </section>
     </section>
     <!-- Fin de Blog -->
 
     <!-- Comienzo de Contacto -->
-    <footer class="shopContacto contacto" id="contacto">
+    <footer class="blogContacto contacto" id="contacto">
         <img src="./src/images/footer-background.svg" alt="imagen mascot de marca" class="footerBackground">
         <nav class="contactoContainer">
             <a href="#portada" class="backToTop">RÄW</a>
-            <div class="whatsapp">
-                <a href="https://wa.me/xxxxxxxxxx" class="whatsappLogo redesLogos">
+            <div class="whatsapp redesLink">
+                <a href="https://wa.me/xxxxxxxxxx">
                     <img src="/src/images/whatsapp-logo.svg"  alt="imagen logo Whatsapp">
                 </a>
-                <a href="https://wa.me/xxxxxxxxxx" class="whatsappLink redesLinks">Whatsapp</a>
+                <a href="https://wa.me/xxxxxxxxxx">Whatsapp</a>
             </div>
-            <div class="instagram">
-                <a href="http://www.instagram.com/raw.cosmetica" class="instagramLogo redesLogos">
+            <div class="instagram redesLink">
+                <a href="http://www.instagram.com/raw.cosmetica">
                     <img src="/src/images/instagram-logo.svg" alt="imagen logo Instagram">
                 </a>
-                <a href="http://www.instagram.com/raw.cosmetica" class="instagramLink redesLinks">Instagram</a>
+                <a href="http://www.instagram.com/raw.cosmetica">Instagram</a>
             </div>
             <h4 class="local">*No tenemos local</h4>
             <div class="tarjetas">
@@ -178,7 +169,6 @@
                     <img src="/src/images/visaLogo.png" alt="imagen logo Visa">
                     <img src="/src/images/americanexpressLogo.png" alt="imagen logo American Express">
                     <img src="/src/images/mastercardLogo.png" alt="imagen logo Mastercard">
-                    
                 </div>
                 <div>
                     <img src="/src/images/cabalLogo.png" alt="imagen logo Cabal">

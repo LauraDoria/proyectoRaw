@@ -8,31 +8,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/*fuentes*/
-/*segunda fuente para titulos segun marca*/
-@font-face {
-    font-family: "julietamessie";
-    src: url("/src/fonts/julietamessie.otf") format("otf");
-} 
-/*segunda fuente para titulos segun marca*/
-/* fuentes */
-
-@import "./base/variables";
-@import "./base/lists";
-@import "./base/extends";
-@import "./base/mixins";
-@import "./components/indexDiagramacion";
-@import "./components/shopDiagramacion";
-@import "./components/blogDiagramacion";
-@import "./components/productoDiagramacion";
-@import "./components/articuloDiagramacion";
-@import "./components/portada";
+@import "./components/index";
+@import "./components/shop";
+@import "./components/blog";
+@import "./components/shampoo-solido-cabello-seco";
+@import "./components/rutina-skincare-101";
+@import "./components/portadaIndex";
 @import "./components/menu";
 @import "./components/indexConocenos";
 @import "./components/indexShop";
 @import "./components/indexBlog";
 @import "./components/contacto";
-@import "./components/reproductorMusica";
+@import "./components/portada";
 @import "./components/shopPromociones";
 @import "./components/shopGaleria";
 @import "./components/shopMayoristas";

@@ -1,36 +1,42 @@
-/* Conocenos en index.html */
 .indexConocenos {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #FCB580;
-    text-align: justify;
+    height: 100vh;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
+    background-color: #FCB580;
 
-.indexConocenos p {
-    min-width: 65%;
-    max-width: 65%;
-    font-size: 3vh;
-    color: #141D98;
-}
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        height: 95vh;
+        width: 100vw;
+    }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .indexConocenos p {
-        font-size: 2vh;
-        max-width: 90%;
-        min-width: 90%;
+    @media screen and (max-width:480px) {
+        height: 95vh;
+        width: 100vw;
+    }
+
+    p {
+        color: #141D98;
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3vh;
+        min-width: 70%;
+        max-width: 70%;
+        text-align: justify;
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            font-size: 2.5vh;
+            min-width: 90%;
+            max-width: 90%;
+        }
+
+        @media screen and (max-width:480px) {
+            font-size: 2vh;
+            min-width: 90%;
+            max-width: 90%;
+        }
     }
 }
-
-@media  screen and (max-width: 480px) {
-    .indexConocenos p {
-        font-size: 2vh;
-        max-width: 90%;
-        min-width: 90%;
-    }    
-}
-/* Conocenos en index.html */
